@@ -5,7 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
             <title></title>
 
-        <!--external stylesheets-->   
+        <!--external stylesheets-->  
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="dist/scrollmap.css">
         <link rel="stylesheet" href="lib/leaflet/leaflet.css">
@@ -14,12 +18,163 @@
     </head>
 
     <body>
-        <div id="mapid"></div>
+        <div class="content">
 
+            <div class="row" >
+                <div class="center title">
+                    <!--title text-->
+                    <h1>Bike and Pedestrian Safety in Washington, DC</h1>
+                    <!--subtitle or author-->
+                    <p class="author">Aileen Clarke</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="center">
+                    <p>Traffic deaths are up in cities across the US and 
+                        Washington, DC isn't an outlier.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="center">
+                    <figure class="lineGraph">
+                        
+                    </figure>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="center">
+                    <p>This recent trend indicates that DC isn't on
+                    track to meet its goal of zero traffic deaths in 2024.</p>
+                </div>
+            </div>    
+
+            <div class="row">
+                <div class="center">
+                    <p>Another graph will go here.</p>
+                </div>
+            </div>    
+
+            <div class="scroll-container">
+                <div class="background-item">
+                    <img class="background" id="firstmap">
+                </div>
+                <div class="foreground-item">
+                    <div class="row">
+                        <div class="background-transparent" id="fade0">
+                                <p class="no-margin"></p>
+                        </div>
+                    </div> 
+                    <div class="row">
+                        <div class="center background-transparent" id="fade1">
+                            <p class="no-margin">Since xxxx, DC has installed xx bike lanes.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class=" center background-transparent" id="fade2">
+                            <p class="no-margin">However, just xx, or % of those are protected bike lanes, 
+                                which are X times safer for bikers.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+            
+            <div class="row">
+                <div class="center">
+                    <p>Bike lanes alone can't protect bikers or pedestrians.</p>
+                </div>
+            </div> 
+
+            <div class="row">
+                <div class="center">
+                    <p>This summer, x number of bikers were killed in DC. Three of them by right hooks,
+                     in which a driver is traveling in the same direction as a bicyclist and turns right 
+                     across the rider's path.</p>
+                </div>
+            </div> 
+
+            <div class="row">
+                <div class="center">
+                    <p>The DC Council is considering legislation that would put an end to right on red
+                        for cars in the district. Which ahs been shown to decrease incidents. As with any 
+                        legistlation passed in the district, it must be approved by congress. tktktk who 
+                        won congress</p>
+                </div>
+            </div> 
+
+            <div class="row">
+                <div class="center">
+                    <p>gRAPH?</p>
+                </div>
+            </div> 
+
+            <div class="row">
+                <div class="center">
+                    <p>Bike lanes are only one part of the solution though. They're concentrated in around
+                        denser population, but that is also one of the whiter parts of the city. 
+                    </p>
+                </div>
+            </div>  
+
+            <div class="row">
+                <div class="center">
+                    <p>Some parts of the city have suffered from lack of investment in converting streets 
+                        to function more safely for pedestrians.  
+                    </p>
+                </div>
+            </div> 
+            
+            <div class="row">
+                <div class="center">
+                    <p>NE - kids in crosswalks, map
+                    </p>
+                </div>
+            </div> 
+
+            <div class="row">
+                <div class="center">
+                    <p>SE, map
+                    </p>
+                </div>
+            </div> 
+
+            <div class="row">
+                <div class="center">
+                    <p>Recently, the city released an update on Vision Zero. Some of the new steps include: 
+                        hting 1 thing 2 thing 3 </p>
+                </div>
+            </div> 
+
+            <div class="row">
+                <div class="center">
+                    <p>Denouement. Vision zero is great, but we should be looking beyond it.</p>
+                </div>
+            </div> 
+
+            
+
+
+        <!--
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col"></div>
+            </div>
+        </div>
+        -->
+
+
+        </div>
         
         <!--external script links--> 
+        <!--<script src="https://d3js.org/colorbrewer.v1.min.js"></script>-->
+        <script src="https://d3js.org/d3.v4.js"></script>
         <script type="text/javascript" src="dist/scrollmap.js"></script>
         <script type="text/javascript" src="lib/leaflet/leaflet.js"></script>
+        <!--<script type="text/javascript" src="lib/d3.min.js"></script>-->
         <script type="text/javascript" src="js/main.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
     </body>

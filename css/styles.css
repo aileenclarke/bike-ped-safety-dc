@@ -1,9 +1,34 @@
 /*Add CSS styles here*/
 body{
-    margin: 0
+    margin: 0;
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 
 #mapid{
     height: 100vh;
     width: 100vw;
+    
+}
+/* line graph style */
+
+.axis path{
+    stroke:black;
+    stroke-width:2px ;
+}   
+
+.axis line{
+    stroke: black;
+    stroke-width: 1.5px;
+} 
+
+.axis text{
+    fill: black;
+    font-weight: bold;
+    font-size: 14px;
+    font-family:"Arial Black", Gadget, sans-serif;
+} 
+
+.legend text{
+    fill:  black;
+    font-family:"Arial Black", Gadget, sans-serif;
 }
