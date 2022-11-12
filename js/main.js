@@ -2,7 +2,7 @@
 window.onload = function(){
 
     
-        var lineW = 900, lineH= 700;
+        var lineW = 800, lineH= 375;
         var data = [
             {year:2015,location:"DC",fatal_rate:3.4},
             {year:2016,location:"DC",fatal_rate:3.6},
@@ -33,53 +33,65 @@ window.onload = function(){
             .attr("width",800)
             .attr("width",400);*/
 
+        // set top and left margin bc axes draw from the left and the top
         leftMargin = 70;
         topMargin = 30;
 
+        //convert input data to year and array through the function
         var parseTime = d3.timeParse("%Y");
-
         data.forEach(function(d){
             d.year = parseTime(d.year);
         });
 
+        
         var xExtent = d3.extent(data, d=>d.year); // returns the range of years
-            xScale = d3.scaleTime().domain(xExtent).range([leftMargin, 900]);
-
+            //scale the time, pass to domain, and use range to draw the axis from left margin to 700 px
+            xScale = d3.scaleTime().domain(xExtent).range([leftMargin, 700]); 
+        
+        // find the max value of fatality rate
         var yMax = d3.max(data, d=>d.fatal_rate); 
-            yScale = d3.scaleLinear().domain([0, yMax+topMargin]).range([600,0]);
+            console.log(yMax)
+            // set domain from 0 to 15 (since max value is 11). range is from 300 to the top (0)
+            yScale = d3.scaleLinear().domain([0, 15]).range([300,0]);
+            console.log(yScale)
             
   
-
+        // axis Bottom creates a horizontal axis and draws ticks/labels towards bottom
+        // call this when drawing x axis below
         xAxis = d3.axisBottom()
             .scale(xScale)
 
+        // draw x axis
         d3.select("SVG")
             .append("g")
             .attr("class","axis")
-            .attr("transform","translate(0,500)")
+            .attr("transform","translate(0,300)") // axis is drawn from origin (0,0). use translate to move down.
             .call(xAxis)
-            .append("text")
-            .attr("x",(900+70)/2)
-            .attr("y","50")
+            .append("text") //append axis label
+            .attr("x",(700+70)/2) // position label centered below x axis (left margin+width)/2
+            .attr("y","50") // position label below axis
             .text("Year")
-
+ 
+        // axis lef creates vertical axis with ticks and numbers towards left
+        // call this function from below
         yAxis = d3.axisLeft()
             .scale(yScale)
-            .ticks(3)
+            .ticks(3) // specify number of ticks
 
+        // draw y axis 
         d3.select("SVG")
             .append("g")
             .attr("class","axis")
-            .attr("transform", 'translate(70,20)')
+            .attr("transform", 'translate(70,20)') // draw 70 px to right so room for labels and down 20 to intersect x axis
             .call(yAxis)
-            .append("text")
-            .attr("transform","rotate(-90)")
-            .attr("x","150")
-            .attr("y", "-50")
-            .attr("text-anchor","end")
+            .append("text") // append axis label
+            .attr("transform","rotate(-90)") // rotate -90 so it writes vertically
+            .attr("x","-10") //end of label should be -10 from origin 
+            .attr("y", "-40") // y of label should be -40 from axis
+            .attr("text-anchor","end") // tells d3 that x,y  position of text should be based on end of text
             .text("Fatalities per 100,000 Residents")
     
-        //var sumstat = d3.group(data, d=>d.location);
+        // group data (nest) by location (key)
         var sumstat = d3.nest() 
             .key(d => d.location)
             .entries(data);
@@ -88,24 +100,37 @@ window.onload = function(){
         //var locationName = sumstat.map(d => d.key)
         //var color = d3.scaleOrdinal().domain(locationName).range(colorbrewer.Set2[6])
 
+        // draw paths
         d3.select("SVG")
             .selectAll(".line")
             .append("g")
             .attr("class","line")
-            .data(sumstat)
+            .data(sumstat) // use nested (grouped) data so a line will be drawn for each group
             .enter()
-            .append("path")
-            .attr("d", function(d){
+            .append("path") // draw lines by appending path
+            .attr("d", function(d){ //attributed d defines pth to be drawn
                 console.log(d)
-                return d3.line()
-                .x(d => xScale(d.year))
-                .y(d => yScale(d.fatal_rate)).curve(d3.curveCardinal)
+                return d3.line() // call d3.line to create d attrb of path following the points
+                .x(d => xScale(d.year)) // set x as year
+                .y(d => yScale(d.fatal_rate)).curve(d3.curveLinear) // set y as fatality rate and specify curve type
                 (d.values)
             })
             .attr("fill","none")
             //.attr("stroke",d=> color(d.key))
             .attr("stroke","black")
             .attr("stroke-width",2)
+
+            // opt. draw a circle for each point
+            d3.select("svg")
+                .selectAll("circle")
+                .append("g")
+                .data(data) // use inteasted of sumstat bc we are not drawing one circle per group
+                .enter()
+                .append("circle")
+                .attr("r", 6) // size of circle
+                .attr("cx", d => xScale(d.year)) // x coord of circle
+                .attr("cy", d => yScale(d.fatal_rate)) // y coord of circle.
+                .style("fill", "black")
     
 
 };
