@@ -50,10 +50,10 @@ window.onload = function(){
         
         // find the max value of fatality rate
         var yMax = d3.max(data, d=>d.fatal_rate); 
-            console.log(yMax)
+            //console.log(yMax)
             // set domain from 0 to 15 (since max value is 11). range is from 300 to the top (0)
             yScale = d3.scaleLinear().domain([0, 15]).range([300,0]);
-            console.log(yScale)
+            //console.log(yScale)
             
   
         // axis Bottom creates a horizontal axis and draws ticks/labels towards bottom
@@ -96,7 +96,7 @@ window.onload = function(){
             .key(d => d.location)
             .entries(data);
 
-        console.log(sumstat)
+        //console.log(sumstat)
         //var locationName = sumstat.map(d => d.key)
         //var color = d3.scaleOrdinal().domain(locationName).range(colorbrewer.Set2[6])
 
@@ -109,7 +109,7 @@ window.onload = function(){
             .enter()
             .append("path") // draw lines by appending path
             .attr("d", function(d){ //attributed d defines pth to be drawn
-                console.log(d)
+                //console.log(d)
                 return d3.line() // call d3.line to create d attrb of path following the points
                 .x(d => xScale(d.year)) // set x as year
                 .y(d => yScale(d.fatal_rate)).curve(d3.curveLinear) // set y as fatality rate and specify curve type
@@ -120,17 +120,52 @@ window.onload = function(){
             .attr("stroke","black")
             .attr("stroke-width",2)
 
-            // opt. draw a circle for each point
-            d3.select("svg")
-                .selectAll("circle")
-                .append("g")
-                .data(data) // use inteasted of sumstat bc we are not drawing one circle per group
-                .enter()
-                .append("circle")
-                .attr("r", 6) // size of circle
-                .attr("cx", d => xScale(d.year)) // x coord of circle
-                .attr("cy", d => yScale(d.fatal_rate)) // y coord of circle.
-                .style("fill", "black")
-    
-
+        // opt. draw a circle for each point
+        d3.select("SVG")
+            .selectAll("circle")
+            .append("g")
+            .data(data) // use inteasted of sumstat bc we are not drawing one circle per group
+            .enter()
+            .append("circle")
+            .attr("id","circleToolTip")
+            .attr("r", 6) // size of circle
+            .attr("cx", d => xScale(d.year)) // x coord of circle
+            .attr("cy", d => yScale(d.fatal_rate)) // y coord of circle.
+            .style("fill", "black")
+            
+        /*
+        var tooltip2 = d3.select("SVG")
+            .append("div")
+            .style("position", "absolute")
+            .style("visibility", "hidden")
+            .style("background-color", "white")
+            .style("border", "solid")
+            .style("border-width", "1px")
+            .style("border-radius", "5px")
+            .style("padding", "10px")
+            .html("<p>I'm a tooltip written in HTML</p><img src='https://github.com/holtzy/D3-graph-gallery/blob/master/img/section/ArcSmal.png?raw=true'></img><br>Fancy<br><span style='font-size: 40px;'>Isn't it?</span>");
+        
+        d3.select("#circleTooltip")
+            .on("mouseover", function(){return tooltip2.style("visibility", "visible");})
+            .on("mousemove", function(){return tooltip2.style("top", (event.pageY-2390)+"px").style("left",(event.pageX-800)+"px");})
+            .on("mouseout", function(){return tooltip2.style("visibility", "hidden");});
+        */
 };
+
+
+var dcMap;
+
+function createMap(){
+    dcMap = L.map('dcMap',{
+        center:[38.889484, -77.035278],
+        zoom: 11
+    });
+
+    L.tileLayer('https://api.mapbox.com/styles/v1/amclarke2/cl0g3m8oh000h14n0ok1oan43/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiYW1jbGFya2UyIiwiYSI6ImNrczZtNjkwdjAwZngycW56YW56cHUxaGsifQ._Cc2V5nKC5p2zfrYqw7Aww', { 
+        attribution: '&copy <a href="https://www.mapbox.com/map-feedback/">Mapbox</a> &copy <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(dcMap);
+
+    getData();
+}
+
+document.addEventListener('DOMContentLoaded',createMap)

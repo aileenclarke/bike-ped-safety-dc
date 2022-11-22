@@ -32,3 +32,11 @@ body{
     fill:  black;
     font-family:"Arial Black", Gadget, sans-serif;
 }
+
+#dcMap {
+    height: 500px;
+    width: 100%;
+    display: inline-block;
+    padding: 20px;
+
+}
