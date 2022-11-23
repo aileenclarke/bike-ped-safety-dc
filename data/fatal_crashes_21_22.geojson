@@ -4,452 +4,572 @@
       {
         "type": "Feature",
         "properties": {
-          "X": -76.9855702,
-          "Y": 38.9258849,
-          "date": "1/1/2022",
-          "description": "https://arcg.is/1aDHOu0",
-          "gx_media_links": "",
           "name": "Unnamed",
           "vic_type": "",
           "vic_tot": 1,
+          "date": "1/1/2022",
+          "link": "https://arcg.is/1aDHOu0",
+          "gx_media_links": "",
           "notes": ""
         },
-        "geometry": null
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.9855702,
+            38.9258849
+          ]
+        }
       },
       {
         "type": "Feature",
         "properties": {
-          "X": -76.9997234,
-          "Y": 38.9545279,
-          "date": "2/7/2022",
-          "description": "https://mpdc.dc.gov/release/traffic-fatality-5300-block-south-dakota-avenue-northeast",
-          "gx_media_links": "",
           "name": "Aray Demissie Zikie",
           "vic_type": "Pedestrian",
           "vic_tot": 1,
+          "date": "2/7/2022",
+          "link": "https://mpdc.dc.gov/release/traffic-fatality-5300-block-south-dakota-avenue-northeast",
+          "gx_media_links": "",
           "notes": "Accident Feb 7, died Feb 10"
         },
-        "geometry": null
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.9997234,
+            38.9545279
+          ]
+        }
       },
       {
         "type": "Feature",
         "properties": {
-          "X": -76.9927461,
-          "Y": 38.918126,
-          "date": "2/23/2022",
-          "description": "https://mpdc.dc.gov/release/arrest-made-traffic-fatality-1000-block-brentwood-road-northeast",
-          "gx_media_links": "",
           "name": "Unnamed",
           "vic_type": "Pedestrian",
           "vic_tot": 1,
+          "date": "2/23/2022",
+          "link": "https://mpdc.dc.gov/release/arrest-made-traffic-fatality-1000-block-brentwood-road-northeast",
+          "gx_media_links": "",
           "notes": ""
         },
-        "geometry": null
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.9927461,
+            38.918126
+          ]
+        }
       },
       {
         "type": "Feature",
         "properties": {
-          "X": -76.9298336,
-          "Y": 38.877046,
-          "date": "2/26/2022",
-          "description": "https://mpdc.dc.gov/release/traffic-fatality-5100-block-southern-avenue-southeast",
-          "gx_media_links": "https://doc-0k-c4-mymaps.googleusercontent.com/untrusted/hostedimage/d00vpatdq4l9a9keilvsljnvmo/dq5ba6dtv50sct5u3gr0duhkb4/1669146271000/X3fmDwNBJ1c1JlpaH0f8KWXFB5z0T1vP/09483670580747720206/5AKgB-9mDdgzztWLXjAfNxYO5AXfqKaTN3F6-ZsLG5iDcWDc-RuLXjcTePg0-IPJN3FC1UwFaOG6PgvH77EzIGdIJHDEbCtPBZ-iIe-9pWxEBHIIp-lYuedOhrO-kR2u_dF2nGef9Swh9x1KIBykDuA_IBEqCnjBhtxHUQ2S916z4EcBNTGIZRJnyN6k2UQ3tcvPye84?session=0&fife",
           "name": "Anthony Saw",
           "vic_type": "Driver/Passenger",
           "vic_tot": 1,
+          "date": "2/26/2022",
+          "link": "https://mpdc.dc.gov/release/traffic-fatality-5100-block-southern-avenue-southeast",
+          "gx_media_links": "https://doc-0k-c4-mymaps.googleusercontent.com/untrusted/hostedimage/d00vpatdq4l9a9keilvsljnvmo/dq5ba6dtv50sct5u3gr0duhkb4/1669146271000/X3fmDwNBJ1c1JlpaH0f8KWXFB5z0T1vP/09483670580747720206/5AKgB-9mDdgzztWLXjAfNxYO5AXfqKaTN3F6-ZsLG5iDcWDc-RuLXjcTePg0-IPJN3FC1UwFaOG6PgvH77EzIGdIJHDEbCtPBZ-iIe-9pWxEBHIIp-lYuedOhrO-kR2u_dF2nGef9Swh9x1KIBykDuA_IBEqCnjBhtxHUQ2S916z4EcBNTGIZRJnyN6k2UQ3tcvPye84?session=0&fife",
           "notes": "Hit by another driver "
         },
-        "geometry": null
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.9298336,
+            38.877046
+          ]
+        }
       },
       {
         "type": "Feature",
         "properties": {
-          "X": -77.0416363,
-          "Y": 38.9168159,
-          "date": "3/8/2022",
-          "description": "https://mpdc.dc.gov/release/vehicle-sought-fatal-hit-and-run-18th-street-and-florida-avenue-northwest",
-          "gx_media_links": "https://doc-04-c4-mymaps.googleusercontent.com/untrusted/hostedimage/d00vpatdq4l9a9keilvsljnvmo/7cq8mtup2f746ko5bsqgp9j1h4/1669146271000/X3fmDwNBJ1c1JlpaH0f8KWXFB5z0T1vP/09483670580747720206/5AKgB-9mKemM92W3K7Qfq7M6rbYXZ-LKpva2hWNop-6zQUP6ITX_c4MPi-JQr7kP3CPEYSUMGpGWM_O4YkvIZ1OoIAa9RwuxaEJZiAP9XMEC6x0JqYaDtNBShf9_T-aHdVvjsgrR-ufKrqDoqh01pZN0IBTxiRNafSKCr41uEfSgcxTtEBj8Fv3k1WRAUFmt_cM5R6sk?session=0&fife",
           "name": "Rakesh Patel ",
           "vic_type": "Driver/Passenger",
           "vic_tot": 1,
+          "date": "3/8/2022",
+          "link": "https://mpdc.dc.gov/release/vehicle-sought-fatal-hit-and-run-18th-street-and-florida-avenue-northwest",
+          "gx_media_links": "https://doc-04-c4-mymaps.googleusercontent.com/untrusted/hostedimage/d00vpatdq4l9a9keilvsljnvmo/7cq8mtup2f746ko5bsqgp9j1h4/1669146271000/X3fmDwNBJ1c1JlpaH0f8KWXFB5z0T1vP/09483670580747720206/5AKgB-9mKemM92W3K7Qfq7M6rbYXZ-LKpva2hWNop-6zQUP6ITX_c4MPi-JQr7kP3CPEYSUMGpGWM_O4YkvIZ1OoIAa9RwuxaEJZiAP9XMEC6x0JqYaDtNBShf9_T-aHdVvjsgrR-ufKrqDoqh01pZN0IBTxiRNafSKCr41uEfSgcxTtEBj8Fv3k1WRAUFmt_cM5R6sk?session=0&fife",
           "notes": "Hit by driver who stole his car"
         },
-        "geometry": null
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -77.0416363,
+            38.9168159
+          ]
+        }
       },
       {
         "type": "Feature",
         "properties": {
-          "X": -76.999097,
-          "Y": 38.8793804,
-          "date": "3/8/2022",
-          "description": "https://mpdc.dc.gov/release/decedent-identified-traffic-fatality-interstate-695-eastbound-exit-1c",
-          "gx_media_links": "https://doc-0g-c4-mymaps.googleusercontent.com/untrusted/hostedimage/d00vpatdq4l9a9keilvsljnvmo/ki4rhmp144o022vcfqg73bj3es/1669146271000/X3fmDwNBJ1c1JlpaH0f8KWXFB5z0T1vP/09483670580747720206/5AKgB-9n0rVtgmrha2mk0fxQM9jFGKLIm1wZTAVMsUO1-7t4I6xJncxYrFvvJvSJCTTlsAGi5hJ3ly75hVzeVxwTdl-L3bmm85vck43xIsH2zivFY2inFUPtzn18k3Bi3ZiHwhoHtKgwBlF-23kwVzeDKGbP3FSnL4-AzZiwoqA2QCBZtmj-at3GWCdG_bYk2aO0coaM?session=0&fife",
-          "name": "",
+          "name": "Steven Roy, Unnamed",
           "vic_type": "Driver and Passenger",
           "vic_tot": 2,
+          "date": "3/8/2022",
+          "link": "https://mpdc.dc.gov/release/decedent-identified-traffic-fatality-interstate-695-eastbound-exit-1c",
+          "gx_media_links": "https://doc-0g-c4-mymaps.googleusercontent.com/untrusted/hostedimage/d00vpatdq4l9a9keilvsljnvmo/ki4rhmp144o022vcfqg73bj3es/1669146271000/X3fmDwNBJ1c1JlpaH0f8KWXFB5z0T1vP/09483670580747720206/5AKgB-9n0rVtgmrha2mk0fxQM9jFGKLIm1wZTAVMsUO1-7t4I6xJncxYrFvvJvSJCTTlsAGi5hJ3ly75hVzeVxwTdl-L3bmm85vck43xIsH2zivFY2inFUPtzn18k3Bi3ZiHwhoHtKgwBlF-23kwVzeDKGbP3FSnL4-AzZiwoqA2QCBZtmj-at3GWCdG_bYk2aO0coaM?session=0&fife",
           "notes": ""
         },
-        "geometry": null
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.999097,
+            38.8793804
+          ]
+        }
       },
       {
         "type": "Feature",
         "properties": {
-          "X": -77.0750052,
-          "Y": 38.9632762,
-          "date": "3/11/2022",
-          "description": "https://mpdc.dc.gov/release/traffic-fatalities-5500-block-connecticut-avenue-northwest",
-          "gx_media_links": "",
           "name": "Terese Dudnick Taffer, Jane Bloom",
           "vic_type": "Pedestrian",
           "vic_tot": 2,
+          "date": "3/11/2022",
+          "link": "https://mpdc.dc.gov/release/traffic-fatalities-5500-block-connecticut-avenue-northwest",
+          "gx_media_links": "",
           "notes": "Seated outside a restaurant."
         },
-        "geometry": null
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -77.0750052,
+            38.9632762
+          ]
+        }
       },
       {
         "type": "Feature",
         "properties": {
-          "X": -76.9577477,
-          "Y": 38.8551912,
-          "date": "3/13/2022",
-          "description": "https://www.wusa9.com/article/news/local/suitland-parkway-crash-petition-javon-leach/65-8e813c75-dceb-4fe8-8eef-eb0d44bc0092",
-          "gx_media_links": "https://doc-04-c4-mymaps.googleusercontent.com/untrusted/hostedimage/d00vpatdq4l9a9keilvsljnvmo/psvspnqgbhm56aca8mcmh8fcog/1669146271000/X3fmDwNBJ1c1JlpaH0f8KWXFB5z0T1vP/09483670580747720206/5AKgB-9nJOfFawICCIIv6WABwGM8YXi84A2hLohYWnbqZH_JIm2VaqVrDdj3xtBnWe2VKR-l4QxYPtpFCvWn7lRQM5BEdUo1oL3kvQ2O1CmWgDlbvBOhm0YumajrSEEFj1iP0Xr7FTDbQPmI4YFXw0vBdnR03G7c20OLux6qaFCAt8TolX9Q9rUOC0xaEfSWj2pq6RvU?session=0&fife",
           "name": "Javon (Leach)",
           "vic_type": "Passenger",
           "vic_tot": 1,
+          "date": "3/13/2022",
+          "link": "https://www.wusa9.com/article/news/local/suitland-parkway-crash-petition-javon-leach/65-8e813c75-dceb-4fe8-8eef-eb0d44bc0092",
+          "gx_media_links": "https://doc-04-c4-mymaps.googleusercontent.com/untrusted/hostedimage/d00vpatdq4l9a9keilvsljnvmo/psvspnqgbhm56aca8mcmh8fcog/1669146271000/X3fmDwNBJ1c1JlpaH0f8KWXFB5z0T1vP/09483670580747720206/5AKgB-9nJOfFawICCIIv6WABwGM8YXi84A2hLohYWnbqZH_JIm2VaqVrDdj3xtBnWe2VKR-l4QxYPtpFCvWn7lRQM5BEdUo1oL3kvQ2O1CmWgDlbvBOhm0YumajrSEEFj1iP0Xr7FTDbQPmI4YFXw0vBdnR03G7c20OLux6qaFCAt8TolX9Q9rUOC0xaEfSWj2pq6RvU?session=0&fife",
           "notes": "Car he was riding in stalled. Suitland Parkway."
         },
-        "geometry": null
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.9577477,
+            38.8551912
+          ]
+        }
       },
       {
         "type": "Feature",
         "properties": {
-          "X": -77.0222664,
-          "Y": 38.9223374,
-          "date": "3/16/2022",
-          "description": "https://mpdc.dc.gov/release/traffic-fatality-georgia-avenue-and-howard-place-northwest",
-          "gx_media_links": "https://doc-04-c4-mymaps.googleusercontent.com/untrusted/hostedimage/d00vpatdq4l9a9keilvsljnvmo/vgprl6k464b88mmg5rbecfucgk/1669146271000/X3fmDwNBJ1c1JlpaH0f8KWXFB5z0T1vP/09483670580747720206/5AKgB-9lO5Ef-9ZEOAHQcNFs7fOXuS0mY2wG5OcddJjLDBruGRegKJo_IqE_uOht5WK0_6C3W1HzeolNMTfAzJrTXyOfoi-UD1jj_15d8twsEm0jYCs5fKn92NfiNGRDakST-6ZTsdSaj494cXry0Khrn7QrXUCgZJc3KaIylrFDxzE3QMPSSaqykTpoGetVuuKRFKLY?session=0&fife",
           "name": "Michael Thomas",
           "vic_type": "Driver/Passenger",
           "vic_tot": 1,
+          "date": "3/16/2022",
+          "link": "https://mpdc.dc.gov/release/traffic-fatality-georgia-avenue-and-howard-place-northwest",
+          "gx_media_links": "https://doc-04-c4-mymaps.googleusercontent.com/untrusted/hostedimage/d00vpatdq4l9a9keilvsljnvmo/vgprl6k464b88mmg5rbecfucgk/1669146271000/X3fmDwNBJ1c1JlpaH0f8KWXFB5z0T1vP/09483670580747720206/5AKgB-9lO5Ef-9ZEOAHQcNFs7fOXuS0mY2wG5OcddJjLDBruGRegKJo_IqE_uOht5WK0_6C3W1HzeolNMTfAzJrTXyOfoi-UD1jj_15d8twsEm0jYCs5fKn92NfiNGRDakST-6ZTsdSaj494cXry0Khrn7QrXUCgZJc3KaIylrFDxzE3QMPSSaqykTpoGetVuuKRFKLY?session=0&fife",
           "notes": ""
         },
-        "geometry": null
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -77.0222664,
+            38.9223374
+          ]
+        }
       },
       {
         "type": "Feature",
         "properties": {
-          "X": -77.0147491,
-          "Y": 38.9053053,
-          "date": "3/17/2022",
-          "description": "https://mpdc.dc.gov/release/updated-traffic-fatality-intersection-new-york-and-new-jersey-avenues-northwest-0",
-          "gx_media_links": "https://doc-0c-c4-mymaps.googleusercontent.com/untrusted/hostedimage/d00vpatdq4l9a9keilvsljnvmo/f1n2p57vbknrt6uk6ut9h3ilm0/1669146271000/X3fmDwNBJ1c1JlpaH0f8KWXFB5z0T1vP/09483670580747720206/5AKgB-9nANK9TD-3UoqKmGoc0ulEYV7MI4g9YnWCjOWuG2JeuYrZIiULFZYQdCXmyyilJLr9aVfEX6Mmr8NNJ0yX013VeHsjzfTtmh6uPFzT9DR_Hh7qXKOljzwygieiZH6l0p6uNU6KNI-3_0RV0BpYZy20D1J0iosV8XJ4uHrenwrvkYUgFHcrKcsfIDhxV7AHSFZM?session=0&fife",
           "name": "Joseph Robinson",
           "vic_type": "Pedestrian",
           "vic_tot": 1,
+          "date": "3/17/2022",
+          "link": "https://mpdc.dc.gov/release/updated-traffic-fatality-intersection-new-york-and-new-jersey-avenues-northwest-0",
+          "gx_media_links": "https://doc-0c-c4-mymaps.googleusercontent.com/untrusted/hostedimage/d00vpatdq4l9a9keilvsljnvmo/f1n2p57vbknrt6uk6ut9h3ilm0/1669146271000/X3fmDwNBJ1c1JlpaH0f8KWXFB5z0T1vP/09483670580747720206/5AKgB-9nANK9TD-3UoqKmGoc0ulEYV7MI4g9YnWCjOWuG2JeuYrZIiULFZYQdCXmyyilJLr9aVfEX6Mmr8NNJ0yX013VeHsjzfTtmh6uPFzT9DR_Hh7qXKOljzwygieiZH6l0p6uNU6KNI-3_0RV0BpYZy20D1J0iosV8XJ4uHrenwrvkYUgFHcrKcsfIDhxV7AHSFZM?session=0&fife",
           "notes": ""
         },
-        "geometry": null
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -77.0147491,
+            38.9053053
+          ]
+        }
       },
       {
         "type": "Feature",
         "properties": {
-          "X": -76.9311986,
-          "Y": 38.8784841,
-          "date": "3/25/2022",
-          "description": "https://arcg.is/1aDHOu0",
-          "gx_media_links": "https://doc-00-c4-mymaps.googleusercontent.com/untrusted/hostedimage/d00vpatdq4l9a9keilvsljnvmo/4h9v2o8a714bu287v5k4r8rav4/1669146271000/X3fmDwNBJ1c1JlpaH0f8KWXFB5z0T1vP/09483670580747720206/5AKgB-9mAwceVmb8bkLDwQ6jMfonRBZi1-zFM2vRh9MdxiUzpPMfaEumzHVyoHguIUdgnVKxJzda30u4zcVNPU_-gruihddDLQxrKQ2JFauQHxFRhGGmA7mnOQlwzpQ2ENucT-MEi9lNRFJjnD4XU8dpV-nM-CEj1tAPSpJ_zqvGOkFRKHB7gYdrCRsTSSNAXf42Im3s?session=0&fife",
           "name": "Unnamed",
           "vic_type": "",
           "vic_tot": 1,
+          "date": "3/25/2022",
+          "link": "https://arcg.is/1aDHOu0",
+          "gx_media_links": "https://doc-00-c4-mymaps.googleusercontent.com/untrusted/hostedimage/d00vpatdq4l9a9keilvsljnvmo/4h9v2o8a714bu287v5k4r8rav4/1669146271000/X3fmDwNBJ1c1JlpaH0f8KWXFB5z0T1vP/09483670580747720206/5AKgB-9mAwceVmb8bkLDwQ6jMfonRBZi1-zFM2vRh9MdxiUzpPMfaEumzHVyoHguIUdgnVKxJzda30u4zcVNPU_-gruihddDLQxrKQ2JFauQHxFRhGGmA7mnOQlwzpQ2ENucT-MEi9lNRFJjnD4XU8dpV-nM-CEj1tAPSpJ_zqvGOkFRKHB7gYdrCRsTSSNAXf42Im3s?session=0&fife",
           "notes": ""
         },
-        "geometry": null
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.9311986,
+            38.8784841
+          ]
+        }
       },
       {
         "type": "Feature",
         "properties": {
-          "X": -77.0014878,
-          "Y": 38.8425407,
-          "date": "4/3/2022",
-          "description": "https://mpdc.dc.gov/release/updated-traffic-fatality-3300-block-martin-luther-king-jr-avenue-southeast",
-          "gx_media_links": "https://doc-10-c4-mymaps.googleusercontent.com/untrusted/hostedimage/d00vpatdq4l9a9keilvsljnvmo/rchk9b7sf3cbm0to02dskdo4kg/1669146271000/X3fmDwNBJ1c1JlpaH0f8KWXFB5z0T1vP/09483670580747720206/5AKgB-9lXqBWZdevFoUqqg4V4G0c8aga4XBa6BbboMpd_rGY95blh5LY31t4JUcjREiW8iLOtU2Ugki6dYtVAwbc0RaTo3OU-w5AnbPk4IBeIsMp8BJgCk95_sHxCVnghzXsovttcGkAnudnhHIWJhvNFov_YT_ajhZJD6tz9JgJsle39GDBj3l2qJOOiUTgIrI7gX_M?session=0&fife",
           "name": "Demetrius Flutz, Amir Fultz",
           "vic_type": "Driver and Passenger",
           "vic_tot": 2,
+          "date": "4/3/2022",
+          "link": "https://mpdc.dc.gov/release/updated-traffic-fatality-3300-block-martin-luther-king-jr-avenue-southeast",
+          "gx_media_links": "https://doc-10-c4-mymaps.googleusercontent.com/untrusted/hostedimage/d00vpatdq4l9a9keilvsljnvmo/rchk9b7sf3cbm0to02dskdo4kg/1669146271000/X3fmDwNBJ1c1JlpaH0f8KWXFB5z0T1vP/09483670580747720206/5AKgB-9lXqBWZdevFoUqqg4V4G0c8aga4XBa6BbboMpd_rGY95blh5LY31t4JUcjREiW8iLOtU2Ugki6dYtVAwbc0RaTo3OU-w5AnbPk4IBeIsMp8BJgCk95_sHxCVnghzXsovttcGkAnudnhHIWJhvNFov_YT_ajhZJD6tz9JgJsle39GDBj3l2qJOOiUTgIrI7gX_M?session=0&fife",
           "notes": "Accident Apr 3, passenger died Apr 7"
         },
-        "geometry": null
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -77.0014878,
+            38.8425407
+          ]
+        }
       },
       {
         "type": "Feature",
         "properties": {
-          "X": -77.0098563,
-          "Y": 38.9113258,
-          "date": "5/1/2022",
-          "description": "https://www.nbcwashington.com/news/local/man-dies-after-being-hit-by-car-in-northwest-dc/3040183/",
-          "gx_media_links": "https://doc-0o-c4-mymaps.googleusercontent.com/untrusted/hostedimage/d00vpatdq4l9a9keilvsljnvmo/hdvbaltuh52jtnfdbldrejuutc/1669146271000/X3fmDwNBJ1c1JlpaH0f8KWXFB5z0T1vP/09483670580747720206/5AKgB-9kPi74XoclpA51XArDNthWTReXhk9vFu7zYSie45bPb40SjmjlykL5IMs5O4jOEXRLPQ7TLQHHiJBFxlAOtf28tjG4oMxCJU1rFiPeoNLdHRoiSgFgJv8VUHR4KUzSTnglzLZDLjzc950LmUetA5TtzDxzeBB2TWd-26SEW7KhJ7lCPFUcSnnJwh2B-yCr5ts0?session=0&fife",
           "name": "Unnamed",
           "vic_type": "Pedestrian",
           "vic_tot": 1,
+          "date": "5/1/2022",
+          "link": "https://www.nbcwashington.com/news/local/man-dies-after-being-hit-by-car-in-northwest-dc/3040183/",
+          "gx_media_links": "https://doc-0o-c4-mymaps.googleusercontent.com/untrusted/hostedimage/d00vpatdq4l9a9keilvsljnvmo/hdvbaltuh52jtnfdbldrejuutc/1669146271000/X3fmDwNBJ1c1JlpaH0f8KWXFB5z0T1vP/09483670580747720206/5AKgB-9kPi74XoclpA51XArDNthWTReXhk9vFu7zYSie45bPb40SjmjlykL5IMs5O4jOEXRLPQ7TLQHHiJBFxlAOtf28tjG4oMxCJU1rFiPeoNLdHRoiSgFgJv8VUHR4KUzSTnglzLZDLjzc950LmUetA5TtzDxzeBB2TWd-26SEW7KhJ7lCPFUcSnnJwh2B-yCr5ts0?session=0&fife",
           "notes": ""
         },
-        "geometry": null
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -77.0098563,
+            38.9113258
+          ]
+        }
       },
       {
         "type": "Feature",
         "properties": {
-          "X": -77.0726544,
-          "Y": 38.9595879,
-          "date": "5/8/2022",
-          "description": "https://mpdc.dc.gov/release/traffic-fatality-5300-block-connecticut-avenue-northwest",
-          "gx_media_links": "",
           "name": "Clinton Covington",
           "vic_type": "Pedestrian",
           "vic_tot": 1,
+          "date": "5/8/2022",
+          "link": "https://mpdc.dc.gov/release/traffic-fatality-5300-block-connecticut-avenue-northwest",
+          "gx_media_links": "",
           "notes": ""
         },
-        "geometry": null
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -77.0726544,
+            38.9595879
+          ]
+        }
       },
       {
         "type": "Feature",
         "properties": {
-          "X": -76.9636132,
-          "Y": 38.897274,
-          "date": "6/27/2022",
-          "description": "https://mpdc.dc.gov/release/traffic-fatality-2700-block-benning-road-northeast",
-          "gx_media_links": "https://doc-04-c4-mymaps.googleusercontent.com/untrusted/hostedimage/d00vpatdq4l9a9keilvsljnvmo/t1s24mu9b1lf9ok66i1cf2g45g/1669146271000/X3fmDwNBJ1c1JlpaH0f8KWXFB5z0T1vP/09483670580747720206/5AKgB-9lIxkQ_stK_JP5byP7gJ2ST578aZdK6UOhqEp458dzwV3Ozl82HH3xgBaswAcghq90XnfHyGxX2TqWq237d4qu1sYwMBj7VJcZo84NzZQWLUwo2UrRkK3UpuBrfUluZnu1qecS23b2T6M3as0ZqYsd8PaUn59KKNIKSsI8fzic4e988xxe2yZW07USr06lg3jU?session=0&fife",
           "name": "James Herndon",
           "vic_type": "Driver",
           "vic_tot": 1,
+          "date": "6/27/2022",
+          "link": "https://mpdc.dc.gov/release/traffic-fatality-2700-block-benning-road-northeast",
+          "gx_media_links": "https://doc-04-c4-mymaps.googleusercontent.com/untrusted/hostedimage/d00vpatdq4l9a9keilvsljnvmo/t1s24mu9b1lf9ok66i1cf2g45g/1669146271000/X3fmDwNBJ1c1JlpaH0f8KWXFB5z0T1vP/09483670580747720206/5AKgB-9lIxkQ_stK_JP5byP7gJ2ST578aZdK6UOhqEp458dzwV3Ozl82HH3xgBaswAcghq90XnfHyGxX2TqWq237d4qu1sYwMBj7VJcZo84NzZQWLUwo2UrRkK3UpuBrfUluZnu1qecS23b2T6M3as0ZqYsd8PaUn59KKNIKSsI8fzic4e988xxe2yZW07USr06lg3jU?session=0&fife",
           "notes": "Police were chasing they thought was connected to homicide"
         },
-        "geometry": null
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.9636132,
+            38.897274
+          ]
+        }
       },
       {
         "type": "Feature",
         "properties": {
-          "X": -76.9425651,
-          "Y": 38.9019647,
-          "date": "7/2/2022",
-          "description": "https://mpdc.dc.gov/release/traffic-fatality-intersection-minnesota-avenue-and-nannie-helen-burroughs-avenue-northeast",
-          "gx_media_links": "https://doc-0s-c4-mymaps.googleusercontent.com/untrusted/hostedimage/d00vpatdq4l9a9keilvsljnvmo/uhvhioooj0ds5mh3tj2victcvc/1669146271000/X3fmDwNBJ1c1JlpaH0f8KWXFB5z0T1vP/09483670580747720206/5AKgB-9m9lnpfvRsHSg3TFmgUZVutGe9uecHj6uZ48DXL86iaj14BgDitiI23q_m-bKEJBEJvv4kkQdUNZSrfVg5tBYDiv1r-P6YUQlxtS2zJfNVXSH8H52oG8yjNeXRhQvOcZvEzR59F8mKzcDnHRF8KPbwUCqVSq6y81HGNeFYXo9tohjey8e5fnThzcuTHWuu0s6Q?session=0&fife",
           "name": "Michael Hawkins Randall, Charles Jackson",
           "vic_type": "Bicyclist, pedestrian",
           "vic_tot": 2,
+          "date": "7/2/2022",
+          "link": "https://mpdc.dc.gov/release/traffic-fatality-intersection-minnesota-avenue-and-nannie-helen-burroughs-avenue-northeast",
+          "gx_media_links": "https://doc-0s-c4-mymaps.googleusercontent.com/untrusted/hostedimage/d00vpatdq4l9a9keilvsljnvmo/uhvhioooj0ds5mh3tj2victcvc/1669146271000/X3fmDwNBJ1c1JlpaH0f8KWXFB5z0T1vP/09483670580747720206/5AKgB-9m9lnpfvRsHSg3TFmgUZVutGe9uecHj6uZ48DXL86iaj14BgDitiI23q_m-bKEJBEJvv4kkQdUNZSrfVg5tBYDiv1r-P6YUQlxtS2zJfNVXSH8H52oG8yjNeXRhQvOcZvEzR59F8mKzcDnHRF8KPbwUCqVSq6y81HGNeFYXo9tohjey8e5fnThzcuTHWuu0s6Q?session=0&fife",
           "notes": ""
         },
-        "geometry": null
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.9425651,
+            38.9019647
+          ]
+        }
       },
       {
         "type": "Feature",
         "properties": {
-          "X": -77.0219263,
-          "Y": 38.912398,
-          "date": "7/15/2022",
-          "description": "https://mpdc.dc.gov/release/traffic-fatality-intersection-7th-street-and-rhode-island-avenue-northwest",
-          "gx_media_links": "https://doc-14-c4-mymaps.googleusercontent.com/untrusted/hostedimage/d00vpatdq4l9a9keilvsljnvmo/bsstn4jueon8h2ur6cmpam6iuc/1669146271000/X3fmDwNBJ1c1JlpaH0f8KWXFB5z0T1vP/09483670580747720206/5AKgB-9nqhjtoQ5KSANQ9E8nmwxUGsP0-UgpZO4v_L347m0fWBbjG1ziAAVp5rW9iQnRSNgphblkzY85Z1Xga5qMxFY8_FB27HPm3YbbDL0GafJRaCtcsmxHvZgii1Y8utxx8C5kX9a3cb_rDPzCTcxUyVGdC4SkHVuBFVNxelsKjpl66GQqhSHAWNd59V5-vSj-PDtI?session=0&fife",
           "name": "Michael Gorden",
           "vic_type": "Bicyclist",
           "vic_tot": 1,
+          "date": "7/15/2022",
+          "link": "https://mpdc.dc.gov/release/traffic-fatality-intersection-7th-street-and-rhode-island-avenue-northwest",
+          "gx_media_links": "https://doc-14-c4-mymaps.googleusercontent.com/untrusted/hostedimage/d00vpatdq4l9a9keilvsljnvmo/bsstn4jueon8h2ur6cmpam6iuc/1669146271000/X3fmDwNBJ1c1JlpaH0f8KWXFB5z0T1vP/09483670580747720206/5AKgB-9nqhjtoQ5KSANQ9E8nmwxUGsP0-UgpZO4v_L347m0fWBbjG1ziAAVp5rW9iQnRSNgphblkzY85Z1Xga5qMxFY8_FB27HPm3YbbDL0GafJRaCtcsmxHvZgii1Y8utxx8C5kX9a3cb_rDPzCTcxUyVGdC4SkHVuBFVNxelsKjpl66GQqhSHAWNd59V5-vSj-PDtI?session=0&fife",
           "notes": "Right hook by dump truck"
         },
-        "geometry": null
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -77.0219263,
+            38.912398
+          ]
+        }
       },
       {
         "type": "Feature",
         "properties": {
-          "X": -77.0466551,
-          "Y": 38.9007023,
-          "date": "7/20/2022",
-          "description": "https://mpdc.dc.gov/release/traffic-fatality-intersection-21st-street-and-i-street-northwest",
-          "gx_media_links": "https://doc-08-c4-mymaps.googleusercontent.com/untrusted/hostedimage/d00vpatdq4l9a9keilvsljnvmo/cvt0o74urgoenp15ktdjf4nc3c/1669146271000/X3fmDwNBJ1c1JlpaH0f8KWXFB5z0T1vP/09483670580747720206/5AKgB-9nO-_CLI01iq4_FmlpIfqt0qKT-FQjNWzdKqpqwnL5nNrebKY_bkik-ZfmfLWrOt6l2GZ6pShsCpCyMqM9MAmMPe8P8ducAVZsWAuf1lzj9OS4rmOBKMKXTQ5EcaT2pWIJsC6BRInadKmH_y6Xl4tPHvbDDTvtkCDiOcMNfg8jYHyeAIkb798pHhrl3yOMwAIo?session=0&fife",
           "name": "Shawn O'Donnell",
           "vic_type": "Bicyclist",
           "vic_tot": 1,
+          "date": "7/20/2022",
+          "link": "https://mpdc.dc.gov/release/traffic-fatality-intersection-21st-street-and-i-street-northwest",
+          "gx_media_links": "https://doc-08-c4-mymaps.googleusercontent.com/untrusted/hostedimage/d00vpatdq4l9a9keilvsljnvmo/cvt0o74urgoenp15ktdjf4nc3c/1669146271000/X3fmDwNBJ1c1JlpaH0f8KWXFB5z0T1vP/09483670580747720206/5AKgB-9nO-_CLI01iq4_FmlpIfqt0qKT-FQjNWzdKqpqwnL5nNrebKY_bkik-ZfmfLWrOt6l2GZ6pShsCpCyMqM9MAmMPe8P8ducAVZsWAuf1lzj9OS4rmOBKMKXTQ5EcaT2pWIJsC6BRInadKmH_y6Xl4tPHvbDDTvtkCDiOcMNfg8jYHyeAIkb798pHhrl3yOMwAIo?session=0&fife",
           "notes": "Right hook by semi"
         },
-        "geometry": null
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -77.0466551,
+            38.9007023
+          ]
+        }
       },
       {
         "type": "Feature",
         "properties": {
-          "X": -77.0456697,
-          "Y": 38.8945922,
-          "date": "8/3/2022",
-          "description": "https://mpdc.dc.gov/release/traffic-fatality-2100-block-virginia-avenue-northwest",
-          "gx_media_links": "https://doc-04-c4-mymaps.googleusercontent.com/untrusted/hostedimage/d00vpatdq4l9a9keilvsljnvmo/asr5bn554c4jtmrq9gci51tr14/1669146271000/X3fmDwNBJ1c1JlpaH0f8KWXFB5z0T1vP/09483670580747720206/5AKgB-9mvYum5ovJ4cIRggQn9stdT0H-f74MMhuTmIbE-Gs_MZE16tSRocYbNrydLth1k7rh3BmH5RhngIQQr_s3cgKcNAWjvN-c8Ojhgtmf-BECJcVz9AIk02dU6mCxK__bHL3VbXB4Y-wkoVVZwqx-eEIEZb01OGSqnbZyqorRP2IYHV6Lto7PN4EbJfi94sUyzmxA?session=0&fife",
           "name": "Tim Fingarson",
           "vic_type": "Pedestrian",
           "vic_tot": 1,
+          "date": "8/3/2022",
+          "link": "https://mpdc.dc.gov/release/traffic-fatality-2100-block-virginia-avenue-northwest",
+          "gx_media_links": "https://doc-04-c4-mymaps.googleusercontent.com/untrusted/hostedimage/d00vpatdq4l9a9keilvsljnvmo/asr5bn554c4jtmrq9gci51tr14/1669146271000/X3fmDwNBJ1c1JlpaH0f8KWXFB5z0T1vP/09483670580747720206/5AKgB-9mvYum5ovJ4cIRggQn9stdT0H-f74MMhuTmIbE-Gs_MZE16tSRocYbNrydLth1k7rh3BmH5RhngIQQr_s3cgKcNAWjvN-c8Ojhgtmf-BECJcVz9AIk02dU6mCxK__bHL3VbXB4Y-wkoVVZwqx-eEIEZb01OGSqnbZyqorRP2IYHV6Lto7PN4EbJfi94sUyzmxA?session=0&fife",
           "notes": ""
         },
-        "geometry": null
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -77.0456697,
+            38.8945922
+          ]
+        }
       },
       {
         "type": "Feature",
         "properties": {
-          "X": -76.928105,
-          "Y": 38.886358,
-          "date": "9/2/2022",
-          "description": "https://arcg.is/1aDHOu0",
-          "gx_media_links": "https://doc-08-c4-mymaps.googleusercontent.com/untrusted/hostedimage/d00vpatdq4l9a9keilvsljnvmo/nl4ffafljp3qskabln241jtpqk/1669146271000/X3fmDwNBJ1c1JlpaH0f8KWXFB5z0T1vP/09483670580747720206/5AKgB-9kOO2yZUuSHUv4qOWiZVbXjnTVEarQlxlopnlwix9LYZ4_iVPM6vhLHkVbNolJSlf9CCHuay6woR2CqFud8o4CVZ414MAAVgYgRTBYuAssiO48DJWkJK1AYOOcWE_2NtDYrb_93SVUP63Bv32omCcuOpopJsI_caN2O5Ey4o6s8jWu1LDXrFMZPEfW-3x5L6V4?session=0&fife",
           "name": "Unnamed",
           "vic_type": "",
           "vic_tot": 1,
+          "date": "9/2/2022",
+          "link": "https://arcg.is/1aDHOu0",
+          "gx_media_links": "https://doc-08-c4-mymaps.googleusercontent.com/untrusted/hostedimage/d00vpatdq4l9a9keilvsljnvmo/nl4ffafljp3qskabln241jtpqk/1669146271000/X3fmDwNBJ1c1JlpaH0f8KWXFB5z0T1vP/09483670580747720206/5AKgB-9kOO2yZUuSHUv4qOWiZVbXjnTVEarQlxlopnlwix9LYZ4_iVPM6vhLHkVbNolJSlf9CCHuay6woR2CqFud8o4CVZ414MAAVgYgRTBYuAssiO48DJWkJK1AYOOcWE_2NtDYrb_93SVUP63Bv32omCcuOpopJsI_caN2O5Ey4o6s8jWu1LDXrFMZPEfW-3x5L6V4?session=0&fife",
           "notes": ""
         },
-        "geometry": null
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.928105,
+            38.886358
+          ]
+        }
       },
       {
         "type": "Feature",
         "properties": {
-          "X": -76.9873382,
-          "Y": 38.8321024,
-          "date": "9/4/2022",
-          "description": "https://mpdc.dc.gov/release/traffic-fatality-intersection-wheeler-road-and-southern-avenue-southeast",
-          "gx_media_links": "https://doc-00-c4-mymaps.googleusercontent.com/untrusted/hostedimage/d00vpatdq4l9a9keilvsljnvmo/79261kbqh1cq1pqk1gg3euskuk/1669146271000/X3fmDwNBJ1c1JlpaH0f8KWXFB5z0T1vP/09483670580747720206/5AKgB-9n111a8KGWMAXbv8V_VyNYbbjYG8QzRoow8cl_FQaRhXLjgEc05vtx-YYb516VfGyTcfScA87p5b0q2ui6YDxo0hS0nEfS0eEo0x_DEOZzo0N1kboDV1t4kIVdCNfygfaERyzu9e9QlEdzm9zTML3lYZcV4uJ4611a4DkYBiCSMSBwWV9M5KLsKlQ3pcNDw9lk?session=0&fife",
           "name": "JasmineButler",
           "vic_type": "Pedestrian",
           "vic_tot": 1,
+          "date": "9/4/2022",
+          "link": "https://mpdc.dc.gov/release/traffic-fatality-intersection-wheeler-road-and-southern-avenue-southeast",
+          "gx_media_links": "https://doc-00-c4-mymaps.googleusercontent.com/untrusted/hostedimage/d00vpatdq4l9a9keilvsljnvmo/79261kbqh1cq1pqk1gg3euskuk/1669146271000/X3fmDwNBJ1c1JlpaH0f8KWXFB5z0T1vP/09483670580747720206/5AKgB-9n111a8KGWMAXbv8V_VyNYbbjYG8QzRoow8cl_FQaRhXLjgEc05vtx-YYb516VfGyTcfScA87p5b0q2ui6YDxo0hS0nEfS0eEo0x_DEOZzo0N1kboDV1t4kIVdCNfygfaERyzu9e9QlEdzm9zTML3lYZcV4uJ4611a4DkYBiCSMSBwWV9M5KLsKlQ3pcNDw9lk?session=0&fife",
           "notes": ""
         },
-        "geometry": null
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.9873382,
+            38.8321024
+          ]
+        }
       },
       {
         "type": "Feature",
         "properties": {
-          "X": -77.1118,
-          "Y": 38.9303498,
-          "date": "9/24/2022",
-          "description": "https://mpdc.dc.gov/release/traffic-fatality-intersection-canal-road-and-chain-bridge-road-northwest",
-          "gx_media_links": "",
           "name": "Jefferson Leonel Garcia-Yanez",
           "vic_type": "Driver",
           "vic_tot": 1,
+          "date": "9/24/2022",
+          "link": "https://mpdc.dc.gov/release/traffic-fatality-intersection-canal-road-and-chain-bridge-road-northwest",
+          "gx_media_links": "",
           "notes": ""
         },
-        "geometry": null
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -77.1118,
+            38.9303498
+          ]
+        }
       },
       {
         "type": "Feature",
         "properties": {
-          "X": -77.0259879,
-          "Y": 38.9035948,
-          "date": "10/5/2022",
-          "description": "https://mpdc.dc.gov/release/traffic-fatality-intersection-10th-street-and-massachusetts-avenue-northwest",
-          "gx_media_links": "https://doc-14-c4-mymaps.googleusercontent.com/untrusted/hostedimage/d00vpatdq4l9a9keilvsljnvmo/n0ql40c4u69bp3a8iscb54roug/1669146271000/X3fmDwNBJ1c1JlpaH0f8KWXFB5z0T1vP/09483670580747720206/5AKgB-9npxwRHHneL0K3xhk2lETrj9X7sHNUJkaUGdYb8vg-7VWsmwVVB96dPzqdkhlmYYETgZjAaYJoZ9C3R7PznPqt-guvFluzyRMoaeoMI8XgGTWxRDSRdcPGy12cC-2BxWG8Be2QOv7x4K5vniiQvqSkSz6Xva5HvSUf78rK2pSVuGh65jhNDEqGQyIfFrqtJGrw?session=0&fife",
           "name": "Venancie Musabe",
           "vic_type": "Pedestrian",
           "vic_tot": 1,
+          "date": "10/5/2022",
+          "link": "https://mpdc.dc.gov/release/traffic-fatality-intersection-10th-street-and-massachusetts-avenue-northwest",
+          "gx_media_links": "https://doc-14-c4-mymaps.googleusercontent.com/untrusted/hostedimage/d00vpatdq4l9a9keilvsljnvmo/n0ql40c4u69bp3a8iscb54roug/1669146271000/X3fmDwNBJ1c1JlpaH0f8KWXFB5z0T1vP/09483670580747720206/5AKgB-9npxwRHHneL0K3xhk2lETrj9X7sHNUJkaUGdYb8vg-7VWsmwVVB96dPzqdkhlmYYETgZjAaYJoZ9C3R7PznPqt-guvFluzyRMoaeoMI8XgGTWxRDSRdcPGy12cC-2BxWG8Be2QOv7x4K5vniiQvqSkSz6Xva5HvSUf78rK2pSVuGh65jhNDEqGQyIfFrqtJGrw?session=0&fife",
           "notes": ""
         },
-        "geometry": null
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -77.0259879,
+            38.9035948
+          ]
+        }
       },
       {
         "type": "Feature",
         "properties": {
-          "X": -77.0319383,
-          "Y": 38.9024099,
-          "date": "7/4/2021",
-          "description": "https://mpdc.dc.gov/release/traffic-fatality-intersection-14th-and-k-street-northwest",
-          "gx_media_links": "https://doc-0g-c4-mymaps.googleusercontent.com/untrusted/hostedimage/d00vpatdq4l9a9keilvsljnvmo/c75g804rsfbvbolt8a8vtstgq0/1669146345750/X3fmDwNBJ1c1JlpaH0f8KWXFB5z0T1vP/09483670580747720206/5AKgB-9nQsW5bZ69tT7NmKrpS_pmzc02nmL4xwmUQO9OWNNT-BpbBkqk_CmwLeUnT5KZSbTJh_4mxUvA2vcWFxMVYLHFGlqmaVWem4MTlopDrd6NegsN-aW5-dPuNB_pOITZ1XBxYKsjRyTHqaMEu-tlnuufaynfyAjIHTMa9sDZ587ckKonH3rEIwbDKqB4FRN5Vpkk?session=0&fife",
           "name": "Jamya Williams",
           "vic_type": "Driver",
           "vic_tot": 1,
+          "date": "7/4/2021",
+          "link": "https://mpdc.dc.gov/release/traffic-fatality-intersection-14th-and-k-street-northwest",
+          "gx_media_links": "https://doc-0g-c4-mymaps.googleusercontent.com/untrusted/hostedimage/d00vpatdq4l9a9keilvsljnvmo/c75g804rsfbvbolt8a8vtstgq0/1669146345750/X3fmDwNBJ1c1JlpaH0f8KWXFB5z0T1vP/09483670580747720206/5AKgB-9nQsW5bZ69tT7NmKrpS_pmzc02nmL4xwmUQO9OWNNT-BpbBkqk_CmwLeUnT5KZSbTJh_4mxUvA2vcWFxMVYLHFGlqmaVWem4MTlopDrd6NegsN-aW5-dPuNB_pOITZ1XBxYKsjRyTHqaMEu-tlnuufaynfyAjIHTMa9sDZ587ckKonH3rEIwbDKqB4FRN5Vpkk?session=0&fife",
           "notes": ""
         },
-        "geometry": null
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -77.0319383,
+            38.9024099
+          ]
+        }
       },
       {
         "type": "Feature",
         "properties": {
-          "X": -76.986049,
-          "Y": 38.928824,
-          "date": "9/13/2021",
-          "description": "https://mpdc.dc.gov/release/traffic-fatality-intersection-14th-and-irving-streets-northeast",
-          "gx_media_links": "",
           "name": "Allison Hart ",
           "vic_type": "Bicyclist",
           "vic_tot": 1,
+          "date": "9/13/2021",
+          "link": "https://mpdc.dc.gov/release/traffic-fatality-intersection-14th-and-irving-streets-northeast",
+          "gx_media_links": "",
           "notes": "5 year old, in crosswalk."
         },
-        "geometry": null
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.986049,
+            38.928824
+          ]
+        }
       },
       {
         "type": "Feature",
         "properties": {
-          "X": -77.0431853,
-          "Y": 38.9223086,
-          "date": "11/13/2021",
-          "description": "https://mpdc.dc.gov/release/traffic-fatality-columbia-road-and-biltmore-street-northwest",
-          "gx_media_links": "https://doc-14-c4-mymaps.googleusercontent.com/untrusted/hostedimage/d00vpatdq4l9a9keilvsljnvmo/dljnu3ipjnfr24c8bic33un8es/1669146345750/X3fmDwNBJ1c1JlpaH0f8KWXFB5z0T1vP/09483670580747720206/5AKgB-9mwM6YAagvbqeRSpNWLGbadAvoJkmfmtsVwthevLYTIDPYpMfWHUs8vZnx8uA7igLY_yF-_v-CRjeOYrJ0WGBOfFyxLRqJXVITSanBHFhWHEG68DcF6PDVbre-6HJFJGkV_yC4uQCv1TDxR7srXXrvxg9Lb-7j022S1qKgHypbLclhbmlC6ObOmAQIXXqdDq5A?session=0&fife",
           "name": "Nina Larson",
           "vic_type": "Pedestrian",
           "vic_tot": 1,
+          "date": "11/13/2021",
+          "link": "https://mpdc.dc.gov/release/traffic-fatality-columbia-road-and-biltmore-street-northwest",
+          "gx_media_links": "https://doc-14-c4-mymaps.googleusercontent.com/untrusted/hostedimage/d00vpatdq4l9a9keilvsljnvmo/dljnu3ipjnfr24c8bic33un8es/1669146345750/X3fmDwNBJ1c1JlpaH0f8KWXFB5z0T1vP/09483670580747720206/5AKgB-9mwM6YAagvbqeRSpNWLGbadAvoJkmfmtsVwthevLYTIDPYpMfWHUs8vZnx8uA7igLY_yF-_v-CRjeOYrJ0WGBOfFyxLRqJXVITSanBHFhWHEG68DcF6PDVbre-6HJFJGkV_yC4uQCv1TDxR7srXXrvxg9Lb-7j022S1qKgHypbLclhbmlC6ObOmAQIXXqdDq5A?session=0&fife",
           "notes": ""
         },
-        "geometry": null
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -77.0431853,
+            38.9223086
+          ]
+        }
       },
       {
         "type": "Feature",
         "properties": {
-          "X": -76.982182,
-          "Y": 38.942552,
-          "date": "11/21/2021",
-          "description": "https://mpdc.dc.gov/release/traffic-fatality-1700-block-bunker-hill-road-northeast",
-          "gx_media_links": "",
           "name": "Isiah Smith",
           "vic_type": "Driver",
           "vic_tot": 1,
+          "date": "11/21/2021",
+          "link": "https://mpdc.dc.gov/release/traffic-fatality-1700-block-bunker-hill-road-northeast",
+          "gx_media_links": "",
           "notes": ""
         },
-        "geometry": null
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.982182,
+            38.942552
+          ]
+        }
       },
       {
         "type": "Feature",
         "properties": {
-          "X": -76.989484,
-          "Y": 38.833462,
-          "date": "11/29/2021",
-          "description": "https://mpdc.dc.gov/release/traffic-fatality-4200-block-wheeler-road-southeast",
-          "gx_media_links": "https://doc-0c-c4-mymaps.googleusercontent.com/untrusted/hostedimage/d00vpatdq4l9a9keilvsljnvmo/t8t3v9248b2hhkqfgoqohnej8g/1669146345750/X3fmDwNBJ1c1JlpaH0f8KWXFB5z0T1vP/09483670580747720206/5AKgB-9kcgLzS53SZS2_kObwMo8rNOrYEDJOQoRc9yXYonY0v-UxHYkQPTZFsDYe2XHMcCXDbiCZnaFj5BDZAyMzPczzbrQhlPZ3jt1ymcHTjW2-NOjklUs_vrf3yweRlrNr_ahZIQ04rab97oW9NUJYQOOy55sTAJKfYInNxlTcnycM8ZGZGWKgFWoPVf1M1oBPu5g?session=0&fife",
           "name": "Kevin Tyrone Hodge",
           "vic_type": "Pedestrian",
           "vic_tot": 1,
+          "date": "11/29/2021",
+          "link": "https://mpdc.dc.gov/release/traffic-fatality-4200-block-wheeler-road-southeast",
+          "gx_media_links": "https://doc-0c-c4-mymaps.googleusercontent.com/untrusted/hostedimage/d00vpatdq4l9a9keilvsljnvmo/t8t3v9248b2hhkqfgoqohnej8g/1669146345750/X3fmDwNBJ1c1JlpaH0f8KWXFB5z0T1vP/09483670580747720206/5AKgB-9kcgLzS53SZS2_kObwMo8rNOrYEDJOQoRc9yXYonY0v-UxHYkQPTZFsDYe2XHMcCXDbiCZnaFj5BDZAyMzPczzbrQhlPZ3jt1ymcHTjW2-NOjklUs_vrf3yweRlrNr_ahZIQ04rab97oW9NUJYQOOy55sTAJKfYInNxlTcnycM8ZGZGWKgFWoPVf1M1oBPu5g?session=0&fife",
           "notes": ""
         },
-        "geometry": null
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.989484,
+            38.833462
+          ]
+        }
       },
       {
         "type": "Feature",
         "properties": {
-          "X": -76.9937149,
-          "Y": 38.8421961,
-          "date": "12/10/2021",
-          "description": "https://www.washingtonpost.com/dc-md-va/2022/06/07/kaidyn-green-death/",
-          "gx_media_links": "https://doc-14-c4-mymaps.googleusercontent.com/untrusted/hostedimage/d00vpatdq4l9a9keilvsljnvmo/0orgitjvqtefdodrgnb298n1eo/1669146345750/X3fmDwNBJ1c1JlpaH0f8KWXFB5z0T1vP/09483670580747720206/5AKgB-9m7ha6nT3hYy6kE6rbS_cNfeNDZo5930cxB4HOZIyS9uwuFGebWzF-veei5T1gzwdITxx9lqsdd6csxtbQ38F6LwsalbNiGPAGKcjxJd8Kmw3ktxXQ6DG_LarlYAcR2V6PTDuYhdXrKXTOLNg7s_spHfD7df1eIujdBoGitdhNGjW9LoAxFMFGGxlR1KS-tpb8?session=0&fife",
           "name": "Kaidyn Green",
           "vic_type": "Pedestrian",
           "vic_tot": 1,
+          "date": "12/10/2021",
+          "link": "https://www.washingtonpost.com/dc-md-va/2022/06/07/kaidyn-green-death/",
+          "gx_media_links": "https://doc-14-c4-mymaps.googleusercontent.com/untrusted/hostedimage/d00vpatdq4l9a9keilvsljnvmo/0orgitjvqtefdodrgnb298n1eo/1669146345750/X3fmDwNBJ1c1JlpaH0f8KWXFB5z0T1vP/09483670580747720206/5AKgB-9m7ha6nT3hYy6kE6rbS_cNfeNDZo5930cxB4HOZIyS9uwuFGebWzF-veei5T1gzwdITxx9lqsdd6csxtbQ38F6LwsalbNiGPAGKcjxJd8Kmw3ktxXQ6DG_LarlYAcR2V6PTDuYhdXrKXTOLNg7s_spHfD7df1eIujdBoGitdhNGjW9LoAxFMFGGxlR1KS-tpb8?session=0&fife",
           "notes": "Hit while leaving school for pick up on Dec 10, died in June"
         },
-        "geometry": null
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.9937149,
+            38.8421961
+          ]
+        }
       },
       {
         "type": "Feature",
         "properties": {
-          "X": -76.9890586,
-          "Y": 38.8309999,
-          "date": "12/14/2021",
-          "description": "https://mpdc.dc.gov/release/traffic-fatality-900-block-southern-avenue-southeast-0",
-          "gx_media_links": "https://doc-00-c4-mymaps.googleusercontent.com/untrusted/hostedimage/d00vpatdq4l9a9keilvsljnvmo/eb7r8b2bnkkskms9ceg7f0qqf8/1669146345750/X3fmDwNBJ1c1JlpaH0f8KWXFB5z0T1vP/09483670580747720206/5AKgB-9mTMVT8P1vwL1qZ6u0pGvYwQf7kFLuKeJ1f_ycwuyMA8HN7gEnyx47LIFeeqesdAlWtLPpORJjg6tYVKVRUAbTXrBgUNOBxUXoKa3Ijiyq_n38N2EUm65TLztAHsektpw97YsyAZ41u1zw3q6TsjIdj_8MlTOpxhYB7yA8_0LYi6F59lol5mIyKTCs28n66Iw?session=0&fife",
           "name": "Barry Taylor",
           "vic_type": "Pedestrian",
           "vic_tot": 1,
+          "date": "12/14/2021",
+          "link": "https://mpdc.dc.gov/release/traffic-fatality-900-block-southern-avenue-southeast-0",
+          "gx_media_links": "https://doc-00-c4-mymaps.googleusercontent.com/untrusted/hostedimage/d00vpatdq4l9a9keilvsljnvmo/eb7r8b2bnkkskms9ceg7f0qqf8/1669146345750/X3fmDwNBJ1c1JlpaH0f8KWXFB5z0T1vP/09483670580747720206/5AKgB-9mTMVT8P1vwL1qZ6u0pGvYwQf7kFLuKeJ1f_ycwuyMA8HN7gEnyx47LIFeeqesdAlWtLPpORJjg6tYVKVRUAbTXrBgUNOBxUXoKa3Ijiyq_n38N2EUm65TLztAHsektpw97YsyAZ41u1zw3q6TsjIdj_8MlTOpxhYB7yA8_0LYi6F59lol5mIyKTCs28n66Iw?session=0&fife",
           "notes": ""
         },
-        "geometry": null
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.9890586,
+            38.8309999
+          ]
+        }
       }
     ]
   }

@@ -154,6 +154,8 @@ window.onload = function(){
 
 
 var dcMap;
+var dcHIN;
+var fatalCrashes; 
 
 function createMap(){
     dcMap = L.map('dcMap',{
@@ -167,5 +169,62 @@ function createMap(){
 
     getData();
 }
+
+function onEachFeature(){
+    var popupPoint = "";
+    if (feature.properties){
+        for (var property in feature.properties){
+            popupPoint += "<p>" + property + ": " + feature.properties[property] + "</p>";
+        }
+        layer.bindPopup(popupPoint);
+    };
+};
+
+function getData(){
+    fetch("data/fatal_crashes_21_22.geojson")
+        .then(function(response){
+            return response.json(); //
+        })
+        .then(function(json){
+            //
+            var fatalPoints = {
+                radius: 5,
+                fillColor:"#ff7800",
+                color: "#000",
+                weight: 1,
+                opacity: 1,
+                fillOpacity: 0.8
+            };
+            
+            L.geoJson(json, {
+                pointToLayer: function(feature,latlng){
+                    return L.circleMarker(latlng, fatalPoints);
+                }
+            }).addTo(dcMap);
+        });        
+};
+
+
+ 
+
+/*
+function callback(response){
+    var fatalCrashes = response;
+    nextFunction(fatalCrashes);
+};
+
+
+
+function pointToLayer(feature, latlng){
+    var options = {
+        color: "#000",
+        opacity:1,
+        radius: 5
+    };
+
+    var layer = L.circleMarker(latlng, options);
+    return layer 
+}
+*/
 
 document.addEventListener('DOMContentLoaded',createMap)
