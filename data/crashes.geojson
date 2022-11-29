@@ -1,0 +1,1413 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.9311986,
+            38.8784841,
+            0,
+            -1.7976931348623157e+308
+          ]
+        },
+        "properties": {
+          "name": "Unnamed",
+          "vic_tot": "1",
+          "vic_age": "Unknown",
+          "vic_type": "Unknown",
+          "date": "3/25/2022",
+          "link": "https://arcg.is/1aDHOu0",
+          "notes": "",
+          "missingCrashData": "y"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.986049,
+            38.928824,
+            0,
+            -1.7976931348623157e+308
+          ]
+        },
+        "properties": {
+          "name": "Allison Hart",
+          "vic_tot": "1",
+          "vic_age": "5",
+          "vic_type": "Bicyclist",
+          "date": "9/13/2021",
+          "link": "https://mpdc.dc.gov/release/traffic-fatality-intersection-14th-and-irving-streets-northeast",
+          "notes": "5 year old, in crosswalk.",
+          "missingCrashData": "y"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -77.0508427,
+            38.8960317,
+            0,
+            -1.7976931348623157e+308
+          ]
+        },
+        "properties": {
+          "name": "Saket Kanade",
+          "vic_tot": "1",
+          "vic_age": "24",
+          "vic_type": "Driver",
+          "date": "10/24/2021",
+          "link": "https://mpdc.dc.gov/release/traffic-fatality-e-street-expressway-northwest-southbound-route-66-ramp",
+          "notes": "",
+          "missingCrashData": "y"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.9937149,
+            38.8421961,
+            0,
+            -1.7976931348623157e+308
+          ]
+        },
+        "properties": {
+          "name": "Kaidyn Green",
+          "vic_tot": "1",
+          "vic_age": "9",
+          "vic_type": "Pedestrian",
+          "date": "12/10/2021",
+          "link": "https://www.washingtonpost.com/dc-md-va/2022/06/07/kaidyn-green-death/",
+          "notes": "Hit while leaving school for pick up on Dec 10, died in June",
+          "missingCrashData": "y"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.9855702,
+            38.9258849,
+            0,
+            -1.7976931348623157e+308
+          ]
+        },
+        "properties": {
+          "name": "Unnamed",
+          "vic_tot": "1",
+          "vic_age": "Unknown",
+          "vic_type": "Unknown",
+          "date": "1/1/2022",
+          "link": "https://arcg.is/1aDHOu0",
+          "notes": "",
+          "missingCrashData": "y"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.9997234,
+            38.9545279,
+            0,
+            -1.7976931348623157e+308
+          ]
+        },
+        "properties": {
+          "name": "Aray Demissie Zikie",
+          "vic_tot": "1",
+          "vic_age": "70",
+          "vic_type": "Pedestrian",
+          "date": "2/7/2022",
+          "link": "https://mpdc.dc.gov/release/traffic-fatality-5300-block-south-dakota-avenue-northeast",
+          "notes": "Accident Feb 7, died Feb 10",
+          "missingCrashData": "y"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.9298336,
+            38.877046,
+            0,
+            -1.7976931348623157e+308
+          ]
+        },
+        "properties": {
+          "name": "Anthony Shaw",
+          "vic_tot": "1",
+          "vic_age": "38",
+          "vic_type": "Driver/Passenger",
+          "date": "2/26/2022",
+          "link": "https://mpdc.dc.gov/release/traffic-fatality-5100-block-southern-avenue-southeast",
+          "notes": "Hit by another driver",
+          "missingCrashData": "y"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.999097,
+            38.8793804,
+            0,
+            -1.7976931348623157e+308
+          ]
+        },
+        "properties": {
+          "name": "Steven Roy, Unnamed",
+          "vic_tot": "2",
+          "vic_age": "32, unknown.",
+          "vic_type": "Passanger, Driver",
+          "date": "3/8/2022",
+          "link": "https://mpdc.dc.gov/release/decedent-identified-traffic-fatality-interstate-695-eastbound-exit-1c",
+          "notes": "Driver identity withheld",
+          "missingCrashData": "y"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.9577477,
+            38.8551912,
+            0,
+            -1.7976931348623157e+308
+          ]
+        },
+        "properties": {
+          "name": "Javon Leach",
+          "vic_tot": "1",
+          "vic_age": "13",
+          "vic_type": "Passenger",
+          "date": "3/13/2022",
+          "link": "https://www.wusa9.com/article/news/local/suitland-parkway-crash-petition-javon-leach/65-8e813c75-dceb-4fe8-8eef-eb0d44bc0092",
+          "notes": "Car he was riding in stalled. Suitland Parkway.",
+          "missingCrashData": "y"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -77.0147491,
+            38.9053053,
+            0,
+            -1.7976931348623157e+308
+          ]
+        },
+        "properties": {
+          "name": "Joseph Robinson",
+          "vic_tot": "1",
+          "vic_age": "52",
+          "vic_type": "Pedestrian",
+          "date": "3/17/2022",
+          "link": "https://mpdc.dc.gov/release/updated-traffic-fatality-intersection-new-york-and-new-jersey-avenues-northwest-0",
+          "notes": "",
+          "missingCrashData": "y"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -77.0014878,
+            38.8425407,
+            0,
+            -1.7976931348623157e+308
+          ]
+        },
+        "properties": {
+          "name": "Demetrius Flutz, Amir Fultz",
+          "vic_tot": "2",
+          "vic_age": "47, 10",
+          "vic_type": "Driver and Passenger",
+          "date": "4/3/2022",
+          "link": "https://mpdc.dc.gov/release/updated-traffic-fatality-3300-block-martin-luther-king-jr-avenue-southeast",
+          "notes": "Accident Apr 3, passenger died Apr 7",
+          "missingCrashData": "y"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -77.0098563,
+            38.9113258,
+            0,
+            -1.7976931348623157e+308
+          ]
+        },
+        "properties": {
+          "name": "Unnamed",
+          "vic_tot": "1",
+          "vic_age": "Unknown",
+          "vic_type": "Pedestrian",
+          "date": "5/1/2022",
+          "link": "https://www.nbcwashington.com/news/local/man-dies-after-being-hit-by-car-in-northwest-dc/3040183/",
+          "notes": "",
+          "missingCrashData": "y"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -77.0726544,
+            38.9595879,
+            0,
+            -1.7976931348623157e+308
+          ]
+        },
+        "properties": {
+          "name": "Clinton Covington",
+          "vic_tot": "1",
+          "vic_age": "66",
+          "vic_type": "Pedestrian",
+          "date": "5/8/2022",
+          "link": "https://mpdc.dc.gov/release/traffic-fatality-5300-block-connecticut-avenue-northwest",
+          "notes": "",
+          "missingCrashData": "y"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.9425651,
+            38.9019647,
+            0,
+            -1.7976931348623157e+308
+          ]
+        },
+        "properties": {
+          "name": "Michael Hawkins Randall, Charles Jackson",
+          "vic_tot": "2",
+          "vic_age": "70, 64",
+          "vic_type": "Bicyclist, pedestrian",
+          "date": "7/2/2022",
+          "link": "https://mpdc.dc.gov/release/traffic-fatality-intersection-minnesota-avenue-and-nannie-helen-burroughs-avenue-northeast",
+          "notes": "Car crashed into bicylist, then into fireworks stand where Jackson was working.",
+          "missingCrashData": "y"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -77.0219263,
+            38.912398,
+            0,
+            -1.7976931348623157e+308
+          ]
+        },
+        "properties": {
+          "name": "Michael Gorden",
+          "vic_tot": "1",
+          "vic_age": "65",
+          "vic_type": "Bicyclist",
+          "date": "7/15/2022",
+          "link": "https://mpdc.dc.gov/release/traffic-fatality-intersection-7th-street-and-rhode-island-avenue-northwest",
+          "notes": "Right hook by dump truck",
+          "missingCrashData": "y"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -77.0466551,
+            38.9007023,
+            0,
+            -1.7976931348623157e+308
+          ]
+        },
+        "properties": {
+          "name": "Shawn O'Donnell",
+          "vic_tot": "1",
+          "vic_age": "40",
+          "vic_type": "Bicyclist",
+          "date": "7/20/2022",
+          "link": "https://mpdc.dc.gov/release/traffic-fatality-intersection-21st-street-and-i-street-northwest",
+          "notes": "Right hook by semi",
+          "missingCrashData": "y"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.928105,
+            38.886358,
+            0,
+            -1.7976931348623157e+308
+          ]
+        },
+        "properties": {
+          "name": "Unnamed",
+          "vic_tot": "1",
+          "vic_age": "Unknown",
+          "vic_type": "Unknown",
+          "date": "9/2/2022",
+          "link": "https://arcg.is/1aDHOu0",
+          "notes": "",
+          "missingCrashData": "y"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.9873382,
+            38.8321024,
+            0,
+            -1.7976931348623157e+308
+          ]
+        },
+        "properties": {
+          "name": "Jasmine Butler",
+          "vic_tot": "1",
+          "vic_age": "25",
+          "vic_type": "Pedestrian",
+          "date": "9/4/2022",
+          "link": "https://mpdc.dc.gov/release/traffic-fatality-intersection-wheeler-road-and-southern-avenue-southeast",
+          "notes": "",
+          "missingCrashData": "y"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -77.1118,
+            38.9303498,
+            0,
+            -1.7976931348623157e+308
+          ]
+        },
+        "properties": {
+          "name": "Jefferson Leonel Garcia-Yanez",
+          "vic_tot": "1",
+          "vic_age": "25",
+          "vic_type": "Driver",
+          "date": "9/24/2022",
+          "link": "https://mpdc.dc.gov/release/traffic-fatality-intersection-canal-road-and-chain-bridge-road-northwest",
+          "notes": "In totally wrong place on map.",
+          "missingCrashData": "y"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -77.03195738352639,
+            38.90252778892636,
+            0,
+            -1.7976931348623157e+308
+          ]
+        },
+        "properties": {
+          "name": "",
+          "vic_tot": "",
+          "vic_age": "",
+          "vic_type": "",
+          "date": "",
+          "link": "",
+          "notes": "",
+          "missingCrashData": "n"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.93518469082079,
+            38.87351821019729,
+            0,
+            -1.7976931348623157e+308
+          ]
+        },
+        "properties": {
+          "name": "",
+          "vic_tot": "",
+          "vic_age": "",
+          "vic_type": "",
+          "date": "",
+          "link": "",
+          "notes": "",
+          "missingCrashData": "n"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -77.02978291904645,
+            38.882793983255795,
+            0,
+            -1.7976931348623157e+308
+          ]
+        },
+        "properties": {
+          "name": "",
+          "vic_tot": "",
+          "vic_age": "",
+          "vic_type": "",
+          "date": "",
+          "link": "",
+          "notes": "",
+          "missingCrashData": "n"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.9886289044004,
+            38.91443992905954,
+            0,
+            -1.7976931348623157e+308
+          ]
+        },
+        "properties": {
+          "name": "",
+          "vic_tot": "",
+          "vic_age": "",
+          "vic_type": "",
+          "date": "",
+          "link": "",
+          "notes": "",
+          "missingCrashData": "n"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.93188469332392,
+            38.87566377316466,
+            0,
+            -1.7976931348623157e+308
+          ]
+        },
+        "properties": {
+          "name": "",
+          "vic_tot": "",
+          "vic_age": "",
+          "vic_type": "",
+          "date": "",
+          "link": "",
+          "notes": "",
+          "missingCrashData": "n"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.93211869062503,
+            38.910679277226905,
+            0,
+            -1.7976931348623157e+308
+          ]
+        },
+        "properties": {
+          "name": "",
+          "vic_tot": "",
+          "vic_age": "",
+          "vic_type": "",
+          "date": "",
+          "link": "",
+          "notes": "",
+          "missingCrashData": "n"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.94916256380122,
+            38.895140907826715,
+            0,
+            -1.7976931348623157e+308
+          ]
+        },
+        "properties": {
+          "name": "",
+          "vic_tot": "",
+          "vic_age": "",
+          "vic_type": "",
+          "date": "",
+          "link": "",
+          "notes": "",
+          "missingCrashData": "n"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.99988143048358,
+            38.84509733217618,
+            0,
+            -1.7976931348623157e+308
+          ]
+        },
+        "properties": {
+          "name": "",
+          "vic_tot": "",
+          "vic_age": "",
+          "vic_type": "",
+          "date": "",
+          "link": "",
+          "notes": "",
+          "missingCrashData": "n"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -77.042636557631,
+            38.89540621412556,
+            0,
+            -1.7976931348623157e+308
+          ]
+        },
+        "properties": {
+          "name": "",
+          "vic_tot": "",
+          "vic_age": "",
+          "vic_type": "",
+          "date": "",
+          "link": "",
+          "notes": "",
+          "missingCrashData": "n"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.96046154706272,
+            38.869330315641605,
+            0,
+            -1.7976931348623157e+308
+          ]
+        },
+        "properties": {
+          "name": "",
+          "vic_tot": "",
+          "vic_age": "",
+          "vic_type": "",
+          "date": "",
+          "link": "",
+          "notes": "",
+          "missingCrashData": "n"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.95747261247107,
+            38.89654137258634,
+            0,
+            -1.7976931348623157e+308
+          ]
+        },
+        "properties": {
+          "name": "",
+          "vic_tot": "",
+          "vic_age": "",
+          "vic_type": "",
+          "date": "",
+          "link": "",
+          "notes": "",
+          "missingCrashData": "n"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.992938175956,
+            38.9352817273699,
+            0,
+            -1.7976931348623157e+308
+          ]
+        },
+        "properties": {
+          "name": "",
+          "vic_tot": "",
+          "vic_age": "",
+          "vic_type": "",
+          "date": "",
+          "link": "",
+          "notes": "",
+          "missingCrashData": "n"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -77.0530424043834,
+            38.898726976069156,
+            0,
+            -1.7976931348623157e+308
+          ]
+        },
+        "properties": {
+          "name": "",
+          "vic_tot": "",
+          "vic_age": "",
+          "vic_type": "",
+          "date": "",
+          "link": "",
+          "notes": "",
+          "missingCrashData": "n"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -77.02802928062675,
+            38.9562239565704,
+            0,
+            -1.7976931348623157e+308
+          ]
+        },
+        "properties": {
+          "name": "",
+          "vic_tot": "",
+          "vic_age": "",
+          "vic_type": "",
+          "date": "",
+          "link": "",
+          "notes": "",
+          "missingCrashData": "n"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.98552126739253,
+            38.893582841375064,
+            0,
+            -1.7976931348623157e+308
+          ]
+        },
+        "properties": {
+          "name": "",
+          "vic_tot": "",
+          "vic_age": "",
+          "vic_type": "",
+          "date": "",
+          "link": "",
+          "notes": "",
+          "missingCrashData": "n"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -77.01368359302336,
+            38.899303311998324,
+            0,
+            -1.7976931348623157e+308
+          ]
+        },
+        "properties": {
+          "name": "",
+          "vic_tot": "",
+          "vic_age": "",
+          "vic_type": "",
+          "date": "",
+          "link": "",
+          "notes": "",
+          "missingCrashData": "n"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.99052584978807,
+            38.829618664270015,
+            0,
+            -1.7976931348623157e+308
+          ]
+        },
+        "properties": {
+          "name": "",
+          "vic_tot": "",
+          "vic_age": "",
+          "vic_type": "",
+          "date": "",
+          "link": "",
+          "notes": "",
+          "missingCrashData": "n"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.92641435833593,
+            38.9046721728825,
+            0,
+            -1.7976931348623157e+308
+          ]
+        },
+        "properties": {
+          "name": "",
+          "vic_tot": "",
+          "vic_age": "",
+          "vic_type": "",
+          "date": "",
+          "link": "",
+          "notes": "",
+          "missingCrashData": "n"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.93933182989997,
+            38.869543082647226,
+            0,
+            -1.7976931348623157e+308
+          ]
+        },
+        "properties": {
+          "name": "",
+          "vic_tot": "",
+          "vic_age": "",
+          "vic_type": "",
+          "date": "",
+          "link": "",
+          "notes": "",
+          "missingCrashData": "n"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.94595235641606,
+            38.900492391111015,
+            0,
+            -1.7976931348623157e+308
+          ]
+        },
+        "properties": {
+          "name": "",
+          "vic_tot": "",
+          "vic_age": "",
+          "vic_type": "",
+          "date": "",
+          "link": "",
+          "notes": "",
+          "missingCrashData": "n"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -77.02135125055975,
+            38.94199694530283,
+            0,
+            -1.7976931348623157e+308
+          ]
+        },
+        "properties": {
+          "name": "",
+          "vic_tot": "",
+          "vic_age": "",
+          "vic_type": "",
+          "date": "",
+          "link": "",
+          "notes": "",
+          "missingCrashData": "n"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.97287835075525,
+            38.87450617032357,
+            0,
+            -1.7976931348623157e+308
+          ]
+        },
+        "properties": {
+          "name": "",
+          "vic_tot": "",
+          "vic_age": "",
+          "vic_type": "",
+          "date": "",
+          "link": "",
+          "notes": "",
+          "missingCrashData": "n"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -77.02811269364588,
+            38.95999481301027,
+            0,
+            -1.7976931348623157e+308
+          ]
+        },
+        "properties": {
+          "name": "",
+          "vic_tot": "",
+          "vic_age": "",
+          "vic_type": "",
+          "date": "",
+          "link": "",
+          "notes": "",
+          "missingCrashData": "n"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -77.01210213430602,
+            38.952760425453334,
+            0,
+            -1.7976931348623157e+308
+          ]
+        },
+        "properties": {
+          "name": "",
+          "vic_tot": "",
+          "vic_age": "",
+          "vic_type": "",
+          "date": "",
+          "link": "",
+          "notes": "",
+          "missingCrashData": "n"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.97172960533698,
+            38.85039444964417,
+            0,
+            -1.7976931348623157e+308
+          ]
+        },
+        "properties": {
+          "name": "",
+          "vic_tot": "",
+          "vic_age": "",
+          "vic_type": "",
+          "date": "",
+          "link": "",
+          "notes": "",
+          "missingCrashData": "n"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -77.06359471292564,
+            38.905166765833656,
+            0,
+            -1.7976931348623157e+308
+          ]
+        },
+        "properties": {
+          "name": "",
+          "vic_tot": "",
+          "vic_age": "",
+          "vic_type": "",
+          "date": "",
+          "link": "",
+          "notes": "",
+          "missingCrashData": "n"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.99264255530966,
+            38.86255899979807,
+            0,
+            -1.7976931348623157e+308
+          ]
+        },
+        "properties": {
+          "name": "",
+          "vic_tot": "",
+          "vic_age": "",
+          "vic_type": "",
+          "date": "",
+          "link": "",
+          "notes": "",
+          "missingCrashData": "n"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -77.00871508783098,
+            38.95727500413818,
+            0,
+            -1.7976931348623157e+308
+          ]
+        },
+        "properties": {
+          "name": "",
+          "vic_tot": "",
+          "vic_age": "",
+          "vic_type": "",
+          "date": "",
+          "link": "",
+          "notes": "",
+          "missingCrashData": "n"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -77.00182308476752,
+            38.83570882730061,
+            0,
+            -1.7976931348623157e+308
+          ]
+        },
+        "properties": {
+          "name": "",
+          "vic_tot": "",
+          "vic_age": "",
+          "vic_type": "",
+          "date": "",
+          "link": "",
+          "notes": "",
+          "missingCrashData": "n"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -77.04329194846463,
+            38.92208973235529,
+            0,
+            -1.7976931348623157e+308
+          ]
+        },
+        "properties": {
+          "name": "",
+          "vic_tot": "",
+          "vic_age": "",
+          "vic_type": "",
+          "date": "",
+          "link": "",
+          "notes": "",
+          "missingCrashData": "n"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.94882137990271,
+            38.89497463577089,
+            0,
+            -1.7976931348623157e+308
+          ]
+        },
+        "properties": {
+          "name": "",
+          "vic_tot": "",
+          "vic_age": "",
+          "vic_type": "",
+          "date": "",
+          "link": "",
+          "notes": "",
+          "missingCrashData": "n"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.98309227768641,
+            38.94255982647485,
+            0,
+            -1.7976931348623157e+308
+          ]
+        },
+        "properties": {
+          "name": "",
+          "vic_tot": "",
+          "vic_age": "",
+          "vic_type": "",
+          "date": "",
+          "link": "",
+          "notes": "",
+          "missingCrashData": "n"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.98949927547113,
+            38.8327377748285,
+            0,
+            -1.7976931348623157e+308
+          ]
+        },
+        "properties": {
+          "name": "",
+          "vic_tot": "",
+          "vic_age": "",
+          "vic_type": "",
+          "date": "",
+          "link": "",
+          "notes": "",
+          "missingCrashData": "n"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.98877637702816,
+            38.830987102372944,
+            0,
+            -1.7976931348623157e+308
+          ]
+        },
+        "properties": {
+          "name": "",
+          "vic_tot": "",
+          "vic_age": "",
+          "vic_type": "",
+          "date": "",
+          "link": "",
+          "notes": "",
+          "missingCrashData": "n"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.99182029616969,
+            38.918912797187886,
+            0,
+            -1.7976931348623157e+308
+          ]
+        },
+        "properties": {
+          "name": "",
+          "vic_tot": "",
+          "vic_age": "",
+          "vic_type": "",
+          "date": "",
+          "link": "",
+          "notes": "",
+          "missingCrashData": "n"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -77.04165278294954,
+            38.9172237948423,
+            0,
+            -1.7976931348623157e+308
+          ]
+        },
+        "properties": {
+          "name": "",
+          "vic_tot": "",
+          "vic_age": "",
+          "vic_type": "",
+          "date": "",
+          "link": "",
+          "notes": "",
+          "missingCrashData": "n"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.99618675021833,
+            38.87929231998464,
+            0,
+            -1.7976931348623157e+308
+          ]
+        },
+        "properties": {
+          "name": "",
+          "vic_tot": "",
+          "vic_age": "",
+          "vic_type": "",
+          "date": "",
+          "link": "",
+          "notes": "",
+          "missingCrashData": "n"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -77.07480168654854,
+            38.9635786581286,
+            0,
+            -1.7976931348623157e+308
+          ]
+        },
+        "properties": {
+          "name": "",
+          "vic_tot": "",
+          "vic_age": "",
+          "vic_type": "",
+          "date": "",
+          "link": "",
+          "notes": "",
+          "missingCrashData": "n"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -77.02201264436803,
+            38.92063276319152,
+            0,
+            -1.7976931348623157e+308
+          ]
+        },
+        "properties": {
+          "name": "",
+          "vic_tot": "",
+          "vic_age": "",
+          "vic_type": "",
+          "date": "",
+          "link": "",
+          "notes": "",
+          "missingCrashData": "n"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.96991035328011,
+            38.897178220298656,
+            0,
+            -1.7976931348623157e+308
+          ]
+        },
+        "properties": {
+          "name": "",
+          "vic_tot": "",
+          "vic_age": "",
+          "vic_type": "",
+          "date": "",
+          "link": "",
+          "notes": "",
+          "missingCrashData": "n"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.97501773358152,
+            38.84768691112208,
+            0,
+            -1.7976931348623157e+308
+          ]
+        },
+        "properties": {
+          "name": "",
+          "vic_tot": "",
+          "vic_age": "",
+          "vic_type": "",
+          "date": "",
+          "link": "",
+          "notes": "",
+          "missingCrashData": "n"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -77.04811174985736,
+            38.89606940028267,
+            0,
+            -1.7976931348623157e+308
+          ]
+        },
+        "properties": {
+          "name": "",
+          "vic_tot": "",
+          "vic_age": "",
+          "vic_type": "",
+          "date": "",
+          "link": "",
+          "notes": "",
+          "missingCrashData": "n"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -77.00146627874574,
+            38.91094678686477,
+            0,
+            -1.7976931348623157e+308
+          ]
+        },
+        "properties": {
+          "name": "",
+          "vic_tot": "",
+          "vic_age": "",
+          "vic_type": "",
+          "date": "",
+          "link": "",
+          "notes": "",
+          "missingCrashData": "n"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -77.02598643642489,
+            38.90358654368407,
+            0,
+            -1.7976931348623157e+308
+          ]
+        },
+        "properties": {
+          "name": "",
+          "vic_tot": "",
+          "vic_age": "",
+          "vic_type": "",
+          "date": "",
+          "link": "",
+          "notes": "",
+          "missingCrashData": "n"
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.97506959208795,
+            38.91413649420389,
+            0,
+            -1.7976931348623157e+308
+          ]
+        },
+        "properties": {
+          "name": "",
+          "vic_tot": "",
+          "vic_age": "",
+          "vic_type": "",
+          "date": "",
+          "link": "",
+          "notes": "",
+          "missingCrashData": "n"
+        }
+      }
+    ]
+  }

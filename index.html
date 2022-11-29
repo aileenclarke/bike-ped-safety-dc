@@ -31,22 +31,23 @@
 
             <div class="row">
                 <div class="center">
-                    <p>HOOK: Introduce first person narrative
+                    <p>I lived, walked, and biked in DC for six years, until August 2021. 
+                        I continue to read the local news and follow local efforts to improve safety in the city. 
                     </p>
                 </div>
             </div>
 
             <div class="row">
                 <div class="center">
-                    <p>Context 1: Since COVID, traffic incidents are on the rise across the country. The limitations of 
-                        Vision Zero plans put in place over the last 15 years are showing.
+                    <p>Since the COVID pandemic, traffic incidents are on the rise across the country. 
+                        The limitations of Vision Zero plans put in place over the last 15 years are showing.
                     </p>
                 </div>
             </div>
 
             <div class="row">
                 <div class="center">
-                    <p>Context 2: Like the country as a whole, DC has seen a rise in incidents.
+                    <p>Like the country as a whole, DC has seen a rise in incidents.
                     </p>
                 </div>
             </div>
@@ -61,37 +62,41 @@
             
             <div class="row">
                 <div class="center">
-                    <p>Context 2: 3 bicyclists were killed in as many weeks this summer. 2 women were killed as they sat on a restaurant patio.
+                    <p>3 bicyclists were killed in as many weeks this summer. 2 women were killed as they 
+                        sat on a restaurant patio. A child killed on their bike in a crosswalk.
                     </p>
                 </div>
             </div>    
 
             <div class="row">
                 <div class="center">
-                    <p>Catalyst: With these incidents in mind, I retrieved DC's crash data from the city government's online portal.
-
+                    <p>With these incidents in mind, I retrieved DC's crash data from the city government's 
+                        online portal. I planned to analyze the 2021-22 data to date and look at the hotspots 
+                        for incidents involving bicyclists, pedestrians, and vehicles. 
                     </p>
                 </div>
-            </div>    
+            </div>   
 
             <div class="scroll-container">
                 <div class="background-item">
-                    <img class="background" id="firstmap">
+                    <div id="firstMap" class="vert-center"></div>
                 </div>
-                <div class="foreground-item">
+                <div class="foreground-item no-event">
                     <div class="row">
-                        <div class="background-transparent" id="fade0">
+                        <div class="fatal-points center background-transparent" id="start">
                                 <p class="no-margin"></p>
                         </div>
                     </div> 
                     <div class="row">
-                        <div class="center background-transparent" id="fade1">
-                            <p class="no-margin">I started exploring the data and realized that some of these notable incidents were missing from the dataset, which is updated weekly.
+                        <div class="fatal-points center background-transparent" id="dcFatalities">
+                            <p class="no-margin">However, as I explored the data I noticed some inconsistencies. The dataset, which is 
+                                updated weekly, was missing some notable incidents. If I wasn't following local news, 
+                                I may have moved forward without much concern. 
                             </p>
                         </div>
                     </div>
                     <div class="row">
-                        <div class=" center background-transparent" id="fade2">
+                        <div class="fatal-points center background-transparent" id="missingFatalities">
                             <p class="no-margin"> All these fatal incidents were missing from the crash data set. 
                             </p>
                         </div>
@@ -101,33 +106,39 @@
             
             <div class="row">
                 <div class="center">
-                    <p>Catalyst: After researching the dataset more, I found myriad caveats. To the city's credit, they were upfront with this information. 
-                        However, with this in mind, it throws a lot in question. Do the city's official reports use this data? Do they have a corrected
-                        dataset? Is it misleading to provide a public dataset with so many shortcomings? 
+                    <p>I researched the dataset further and found a number of significant caveats. MPD officers report to the scene 
+                        of a crash and complete the crash report form. This report is completed and published to the dataset each week. 
+                        However, the crash report is not updated. If a victim dies hours, days, or even months later that isn't updated 
+                        in this data set. Additionally, MPD officers decide whether or not to call the Major Crash Unit based on the 
+                        observable severity of injuries at the scene. Finally, not all crashes are mapped correctly or mapped at all. 
                     </p>
                 </div>
             </div>
             
             <div class="row">
                 <div class="center">
-                    <p>Tension: </p>
+                    <p>To the city's credit, they were upfront with these caveats. However, on the same page where they list these caveats, 
+                        they also state that the purpose of the dataset is to “provide crash location data  to users interested in exploring 
+                        spatial patterns and creating maps in support of safety analysis.” Since I was focused on traffic violence involving 
+                        pedestrians and cyclists, I couldn't afford to use a dataset  that was missing so many confirmed incidents. </p>
                 </div>
             </div> 
 
             <div class="row">
                 <div class="center">
-                    <p>This summer, x number of bikers were killed in DC. Three of them by right hooks,
-                     in which a driver is traveling in the same direction as a bicyclist and turns right 
-                     across the rider's path.</p>
+                    <p>Now I was confronting a new problem. More data than ever is available for us to download and use. This is a double edged 
+                        sword. No dataset is perfect, so how do we decide what is good enough? The choice has implications on analysis and 
+                        storytelling. Do we not tell a story because the data isn't perfect? Do we move forward knowing the conclusions we 
+                        draw may leave something out?</p>
                 </div>
             </div> 
 
             <div class="row">
                 <div class="center">
-                    <p>The DC Council is considering legislation that would put an end to right on red
-                        for cars in the district. Which ahs been shown to decrease incidents. As with any 
-                        legistlation passed in the district, it must be approved by congress. tktktk who 
-                        won congress</p>
+                    <p>The nature of my dataset recentered my focus. I realized it wouldn't be easy or even possible to gather my own data 
+                        from several cities to compare to DC. I'd have to look at less granularity than I'd hoped. I also realized that I 
+                        could still do some analysis, but that it wouldn't be as GIS heavy.
+                    </p>
                 </div>
             </div> 
 

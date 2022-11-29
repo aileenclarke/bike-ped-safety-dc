@@ -152,79 +152,118 @@ window.onload = function(){
         */
 };
 
-
-var dcMap;
+var fatalPoints;
+var firstMap;
 var dcHIN;
 var fatalCrashes; 
+var style;
 
-function createMap(){
-    dcMap = L.map('dcMap',{
+//function to make things to react to scrolling
+function fatalityScroll(){
+        document.querySelectorAll('.fatal-points').forEach(function(div){
+        //get element and element's property 'top'
+            var rect = div.getBoundingClientRect();
+            y = rect.top;
+            
+        //set the top margin as a ratio of innerHeight
+        var topMargin = window.innerHeight;
+        //call setStyle when top of element is halfway up innerHeight
+        if ((y-topMargin) < 0 && y > 0){  
+            fatalPoints.setStyle(function(feature){
+                return fatalStyle(feature, div.id)
+            });
+        };                              
+    });
+};
+
+function createFatalityMap(){
+    firstMap = L.map('firstMap',{
         center:[38.889484, -77.035278],
-        zoom: 11
+        zoom: 12,
+        scrollWheelZoom: false
     });
 
     L.tileLayer('https://api.mapbox.com/styles/v1/amclarke2/cl0g3m8oh000h14n0ok1oan43/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiYW1jbGFya2UyIiwiYSI6ImNrczZtNjkwdjAwZngycW56YW56cHUxaGsifQ._Cc2V5nKC5p2zfrYqw7Aww', { 
         attribution: '&copy <a href="https://www.mapbox.com/map-feedback/">Mapbox</a> &copy <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-    }).addTo(dcMap);
+    }).addTo(firstMap);
 
     getData();
 }
 
-function onEachFeature(){
-    var popupPoint = "";
-    if (feature.properties){
-        for (var property in feature.properties){
-            popupPoint += "<p>" + property + ": " + feature.properties[property] + "</p>";
-        }
-        layer.bindPopup(popupPoint);
-    };
-};
-
+//retrieve fatality point layer
 function getData(){
-    fetch("data/fatal_crashes_21_22.geojson")
+    fetch("data/crashes.geojson")
         .then(function(response){
             return response.json(); //
         })
         .then(function(json){
-            //
-            var fatalPoints = {
-                radius: 5,
-                fillColor:"#ff7800",
-                color: "#000",
-                weight: 1,
-                opacity: 1,
-                fillOpacity: 0.8
-            };
-            
-            L.geoJson(json, {
-                pointToLayer: function(feature,latlng){
-                    return L.circleMarker(latlng, fatalPoints);
-                }
-            }).addTo(dcMap);
+            //create a geojson layer and add to map
+            fatalPoints = L.geoJson(json, {
+                pointToLayer: pointToLayer
+            }).addTo(firstMap);
+            //call the style function that will style this map
+            fatalPoints.setStyle(fatalStyle);
         });        
 };
 
+//style function to dynamically change point style
+function fatalStyle(feature, divID){
+    return {
+        fillOpacity: opacityFilter(feature.properties, divID)
+        //fillColor: colorFilter(feature.properties, divID)
+        //weight: weightFilter(feature.properties, divID),
+        //color: strokeFilter(feature.properties, divID)
+    };
+};
 
- 
+
+//change point opacity based on property 'missing'
+function opacityFilter(props, divID){
+    //console.log(divID);
+    if (divID === "start"){    
+        return 0
+    } else if ((props.missingCrashData = "n") && divID === "dcFatalities") {
+        console.log(props.missingCrashData); // returning appropriate number of y, but over 3000 n?? ask gareth
+        return 1
+    } else if (divID === "missingFatalities" && (props.missingCrashData = "y")){
+        //console.log(props.missing)
+        return 1 
+    } else {
+        return 0
+    };
+};
 
 /*
-function callback(response){
-    var fatalCrashes = response;
-    nextFunction(fatalCrashes);
+//change point color based on property 'missing'
+function colorFilter(props, divID){
+    if (divID === "start"){    
+        return "#ffffff"
+    } else if (divID === "dcFatalities" && (props.inCrashData = "n")) {
+        return "#000000"
+    } else if (divID === "missingFatalities" && (props.inCrashData = "y")){
+        return "ffff00" 
+    } else {
+        return "#ffffff"
+    };
 };
+*/
 
 
 
 function pointToLayer(feature, latlng){
     var options = {
+        radius: 5,
+        fillColor: "#FFFFFF",
         color: "#000",
-        opacity:1,
-        radius: 5
+        weight: .5,
+        opacity: 1,
+        fillOpacity: 0.8
     };
 
     var layer = L.circleMarker(latlng, options);
     return layer 
 }
-*/
 
-document.addEventListener('DOMContentLoaded',createMap)
+
+document.addEventListener('DOMContentLoaded',createFatalityMap)
+document.addEventListener('scroll',fatalityScroll)

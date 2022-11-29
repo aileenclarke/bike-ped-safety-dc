@@ -1,0 +1,404 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Unnamed",
+          "vic_type": "Unknown",
+          "vic_age": "Unknown",
+          "vic_tot": 1,
+          "date": "3/25/2022",
+          "link": "https://arcg.is/1aDHOu0",
+          "notes": "",
+          "inCrashData": "E",
+          "crashDataNotes": "Listed as Major Injury, 5000 Benning Rd SE, Washington, DC 20019"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.9311986,
+            38.8784841
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Allison Hart ",
+          "vic_type": "Bicyclist",
+          "vic_age": 5,
+          "vic_tot": 1,
+          "date": "9/13/2021",
+          "link": "https://mpdc.dc.gov/release/traffic-fatality-intersection-14th-and-irving-streets-northeast",
+          "notes": "5 year old, in crosswalk.",
+          "inCrashData": "N",
+          "crashDataNotes": ""
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.986049,
+            38.928824
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Saket Kanade",
+          "vic_type": "Driver",
+          "vic_age": 24,
+          "vic_tot": 1,
+          "date": "10/24/2021",
+          "link": "https://mpdc.dc.gov/release/traffic-fatality-e-street-expressway-northwest-southbound-route-66-ramp",
+          "notes": "",
+          "inCrashData": "N",
+          "crashDataNotes": "E Street Expressway Northwest, southbound Route 66 ramp."
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -77.0508427,
+            38.8960317
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Kaidyn Green",
+          "vic_type": "Pedestrian",
+          "vic_age": 9,
+          "vic_tot": 1,
+          "date": "12/10/2021",
+          "link": "https://www.washingtonpost.com/dc-md-va/2022/06/07/kaidyn-green-death/",
+          "notes": "Hit while leaving school for pick up on Dec 10, died in June",
+          "inCrashData": "N",
+          "crashDataNotes": ""
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.9937149,
+            38.8421961
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Unnamed",
+          "vic_type": "Unknown",
+          "vic_age": "Unknown",
+          "vic_tot": 1,
+          "date": "1/1/2022",
+          "link": "https://arcg.is/1aDHOu0",
+          "notes": "",
+          "inCrashData": "N",
+          "crashDataNotes": "1400 Franklin St NE, Washington, DC 20018"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.9855702,
+            38.9258849
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Aray Demissie Zikie",
+          "vic_type": "Pedestrian",
+          "vic_age": 70,
+          "vic_tot": 1,
+          "date": "2/7/2022",
+          "link": "https://mpdc.dc.gov/release/traffic-fatality-5300-block-south-dakota-avenue-northeast",
+          "notes": "Accident Feb 7, died Feb 10",
+          "inCrashData": "N",
+          "crashDataNotes": ""
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.9997234,
+            38.9545279
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Anthony Shaw",
+          "vic_type": "Driver/Passenger",
+          "vic_age": 38,
+          "vic_tot": 1,
+          "date": "2/26/2022",
+          "link": "https://mpdc.dc.gov/release/traffic-fatality-5100-block-southern-avenue-southeast",
+          "notes": "Hit by another driver ",
+          "inCrashData": "N",
+          "crashDataNotes": ""
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.9298336,
+            38.877046
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Steven Roy, Unnamed",
+          "vic_type": "Passanger, Driver",
+          "vic_age": "32, unknown.",
+          "vic_tot": 2,
+          "date": "3/8/2022",
+          "link": "https://mpdc.dc.gov/release/decedent-identified-traffic-fatality-interstate-695-eastbound-exit-1c",
+          "notes": "Driver identity withheld",
+          "inCrashData": "N",
+          "crashDataNotes": ""
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.999097,
+            38.8793804
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Javon Leach",
+          "vic_type": "Passenger",
+          "vic_age": 13,
+          "vic_tot": 1,
+          "date": "3/13/2022",
+          "link": "https://www.wusa9.com/article/news/local/suitland-parkway-crash-petition-javon-leach/65-8e813c75-dceb-4fe8-8eef-eb0d44bc0092",
+          "notes": "Car he was riding in stalled. Suitland Parkway.",
+          "inCrashData": "N",
+          "crashDataNotes": "in MD?"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.9577477,
+            38.8551912
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Joseph Robinson",
+          "vic_type": "Pedestrian",
+          "vic_age": 52,
+          "vic_tot": 1,
+          "date": "3/17/2022",
+          "link": "https://mpdc.dc.gov/release/updated-traffic-fatality-intersection-new-york-and-new-jersey-avenues-northwest-0",
+          "notes": "",
+          "inCrashData": "N",
+          "crashDataNotes": ""
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -77.0147491,
+            38.9053053
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Demetrius Flutz, Amir Fultz",
+          "vic_type": "Driver and Passenger",
+          "vic_age": "47, 10",
+          "vic_tot": 2,
+          "date": "4/3/2022",
+          "link": "https://mpdc.dc.gov/release/updated-traffic-fatality-3300-block-martin-luther-king-jr-avenue-southeast",
+          "notes": "Accident Apr 3, passenger died Apr 7",
+          "inCrashData": "N",
+          "crashDataNotes": ""
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -77.0014878,
+            38.8425407
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Unnamed",
+          "vic_type": "Pedestrian",
+          "vic_age": "Unknown",
+          "vic_tot": 1,
+          "date": "5/1/2022",
+          "link": "https://www.nbcwashington.com/news/local/man-dies-after-being-hit-by-car-in-northwest-dc/3040183/",
+          "notes": "",
+          "inCrashData": "N",
+          "crashDataNotes": "25 Florida Ave NW, Washington, DC 20001"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -77.0098563,
+            38.9113258
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Clinton Covington",
+          "vic_type": "Pedestrian",
+          "vic_age": 66,
+          "vic_tot": 1,
+          "date": "5/8/2022",
+          "link": "https://mpdc.dc.gov/release/traffic-fatality-5300-block-connecticut-avenue-northwest",
+          "notes": "",
+          "inCrashData": "N",
+          "crashDataNotes": ""
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -77.0726544,
+            38.9595879
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Michael Hawkins Randall, Charles Jackson",
+          "vic_type": "Bicyclist, pedestrian",
+          "vic_age": "70, 64",
+          "vic_tot": 2,
+          "date": "7/2/2022",
+          "link": "https://mpdc.dc.gov/release/traffic-fatality-intersection-minnesota-avenue-and-nannie-helen-burroughs-avenue-northeast",
+          "notes": "Car crashed into bicylist, then into fireworks stand where Jackson was working.",
+          "inCrashData": "N",
+          "crashDataNotes": ""
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.9425651,
+            38.9019647
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Michael Gorden",
+          "vic_type": "Bicyclist",
+          "vic_age": 65,
+          "vic_tot": 1,
+          "date": "7/15/2022",
+          "link": "https://mpdc.dc.gov/release/traffic-fatality-intersection-7th-street-and-rhode-island-avenue-northwest",
+          "notes": "Right hook by dump truck",
+          "inCrashData": "N",
+          "crashDataNotes": ""
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -77.0219263,
+            38.912398
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Shawn O'Donnell",
+          "vic_type": "Bicyclist",
+          "vic_age": 40,
+          "vic_tot": 1,
+          "date": "7/20/2022",
+          "link": "https://mpdc.dc.gov/release/traffic-fatality-intersection-21st-street-and-i-street-northwest",
+          "notes": "Right hook by semi",
+          "inCrashData": "N",
+          "crashDataNotes": ""
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -77.0466551,
+            38.9007023
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Unnamed",
+          "vic_type": "Unknown",
+          "vic_age": "Unknown",
+          "vic_tot": 1,
+          "date": "9/2/2022",
+          "link": "https://arcg.is/1aDHOu0",
+          "notes": "",
+          "inCrashData": "N",
+          "crashDataNotes": "B St SE & 51st St SE, Washington, DC 20019"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.928105,
+            38.886358
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Jasmine Butler",
+          "vic_type": "Pedestrian",
+          "vic_age": 25,
+          "vic_tot": 1,
+          "date": "9/4/2022",
+          "link": "https://mpdc.dc.gov/release/traffic-fatality-intersection-wheeler-road-and-southern-avenue-southeast",
+          "notes": "",
+          "inCrashData": "N",
+          "crashDataNotes": ""
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.9873382,
+            38.8321024
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Jefferson Leonel Garcia-Yanez",
+          "vic_type": "Driver",
+          "vic_age": 25,
+          "vic_tot": 1,
+          "date": "9/24/2022",
+          "link": "https://mpdc.dc.gov/release/traffic-fatality-intersection-canal-road-and-chain-bridge-road-northwest",
+          "notes": "In totally wrong place on map.",
+          "inCrashData": "N",
+          "crashDataNotes": "CrimeID 36667385386"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -77.1118,
+            38.9303498
+          ]
+        }
+      }
+    ]
+  }
