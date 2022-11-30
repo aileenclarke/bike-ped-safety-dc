@@ -15,6 +15,7 @@ p{
 }
 
 /* line graph style */
+
 .axis path{
     stroke:black;
     stroke-width:2px ;
@@ -39,7 +40,7 @@ p{
 
 /* fatality map style */
 
-#firstMap {
+#fatalityMap {
     height: 80vh;
     width: 100%;
     display: inline-block;
@@ -58,7 +59,7 @@ p{
 
 
 /* example map style */
-#secondMap {
+#exampleMap {
     height: 80vh;
     width: 100%;
     display: inline-block;

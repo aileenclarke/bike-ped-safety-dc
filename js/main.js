@@ -154,10 +154,11 @@ window.onload = function(){
 
 // GLOBAL VARIABLES
 
-var fatalPoints; //fatal accident point layer
-var firstMap; // fatality map
-var examplePoints;
-var secondMap; // example map
+var fatalPoints; // fatal accident point layer
+var fatalityMap; // fatality map
+var examplePoints; // fatal accident point layer
+var dcWards; // dc ward polygon layer
+var exampleMap; // example map
 
 // MAP OF FATALITIES 
 
@@ -181,7 +182,7 @@ function fatalityScroll(){
 };
 
 function createFatalityMap(){
-    firstMap = L.map('firstMap',{
+    fatalityMap = L.map('fatalityMap',{
         center:[38.889484, -77.11],
         zoom: 12,
         scrollWheelZoom: false
@@ -189,7 +190,7 @@ function createFatalityMap(){
 
     L.tileLayer('https://api.mapbox.com/styles/v1/amclarke2/cl0g3m8oh000h14n0ok1oan43/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiYW1jbGFya2UyIiwiYSI6ImNrczZtNjkwdjAwZngycW56YW56cHUxaGsifQ._Cc2V5nKC5p2zfrYqw7Aww', { 
         attribution: '&copy <a href="https://www.mapbox.com/map-feedback/">Mapbox</a> &copy <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-    }).addTo(firstMap);
+    }).addTo(fatalityMap);
 
     getData();
 }
@@ -203,8 +204,8 @@ function getData(){
         .then(function(json){
             //create a geojson layer and add to map
             fatalPoints = L.geoJson(json, {
-                pointToLayer: pointToLayer
-            }).addTo(firstMap);
+                pointToLayer: pointToLayer1
+            }).addTo(fatalityMap);
             //call the style function that will style this map
             fatalPoints.setStyle(fatalStyle);
         });        
@@ -286,7 +287,7 @@ function strokeFilter(props, divID){
 };
 
 // add points to fatality map
-function pointToLayer(feature, latlng){
+function pointToLayer1(feature, latlng){
     var options = {
         radius: 5,
         fillColor: "#FFFF00",
@@ -351,7 +352,7 @@ function barChartPosition(id, src){
 // EXAMPLE MAP
 
 function createExampleMap(){
-    secondMap = L.map('secondMap',{
+    exampleMap = L.map('exampleMap',{
         center:[38.889484, -77.11],
         zoom: 12,
         scrollWheelZoom: false
@@ -359,30 +360,109 @@ function createExampleMap(){
     
     L.tileLayer('https://api.mapbox.com/styles/v1/amclarke2/cl0g3m8oh000h14n0ok1oan43/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiYW1jbGFya2UyIiwiYSI6ImNrczZtNjkwdjAwZngycW56YW56cHUxaGsifQ._Cc2V5nKC5p2zfrYqw7Aww', { 
         attribution: '&copy <a href="https://www.mapbox.com/map-feedback/">Mapbox</a> &copy <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-    }).addTo(secondMap);
+    }).addTo(exampleMap);
     
-    //getExampleData();
+    getExampleData();
 }
 
 function getExampleData(){
     
     fetch("data/crashes.geojson")
         .then(function(response){
-            
             return response.json(); //
         })
         .then(function(json){
             //create a geojson layer and add to map
             console.log("hello");
             examplePoints = L.geoJson(json, {
-                pointToLayer: pointToLayer
-            }).addTo(secondMap);
-
+                pointToLayer: pointToLayer2
+            }).addTo(exampleMap);
+            examplePoints.setStyle(exampleStyle);
         });        
 };
 
+function exampleStyle(feature){
+    var colorToUse;
+    var missing = feature.properties.missing;
+
+    if (missing === "n") colorToUse = "#ffffff";
+    else colorToUse = "#ffff00";
+
+    return{
+        "color": colorToUse
+    }
+
+};
+
+var fly = [
+    {
+        id: "example0",
+        location: [38.889484, -77.11],
+        zoom: 12
+    },
+    {
+        id: "example1",
+        location: [38.837,-76.99],
+        zoom: 15
+    }, 
+    {
+        id: "example2",
+        location: [38.875,-76.933],
+        zoom: 15
+    },
+    {
+        id:"example3",
+        location: [38.927, -76.986],
+        zoom: 14
+    }
+];
+
+function exampleScroll(){
+    fly.forEach(function(item){
+        examplePosition(item.id, item.location, item.zoom)
+    });
+};
+
+function examplePosition(id, location, zoom){
+    // get element and element's property 'top'
+    var block1 = document.getElementById(id);
+    var rect = block1.getBoundingClientRect();
+    y = rect.top;
+
+    // set the top margin as a ratio of innerHeight
+    var topMargin = window.innerHeight / 2;
+
+    // call flyTo when top of element is halfway up innerHeight
+    if ((y-topMargin) < 0 && y > 0){
+        exampleMap.flyTo(location, zoom, {
+            animate: true,
+            duration: 2 // in seconds
+        });
+    };
+}
+
+// add points to fatality map
+function pointToLayer2(feature, latlng){
+    var options = {
+        radius: 5,
+        fillColor: "#FFFF00",
+        color: "#000",
+        weight: .5,
+        opacity: 1,
+        fillOpacity: 0.8,
+        className:'point'
+    };
+
+    var layer = L.circleMarker(latlng, options);
+
+    var popupContent = "<p><b>name:</b> " + feature.properties.name + "</p>";
+    layer.bindPopup(popupContent);
+
+    return layer; 
+};
 
 document.addEventListener('DOMContentLoaded', createFatalityMap)
 document.addEventListener('DOMContentLoaded', createExampleMap)
 document.addEventListener('scroll', fatalityScroll)
+document.addEventListener('scroll', exampleScroll)
 //document.addEventListener('scroll', barChartScroll)
