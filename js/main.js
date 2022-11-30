@@ -1,4 +1,4 @@
-
+// LINE GRAPH
 window.onload = function(){
 
     
@@ -152,13 +152,16 @@ window.onload = function(){
         */
 };
 
-var fatalPoints;
-var firstMap;
-var dcHIN;
-var fatalCrashes; 
-var style;
+// GLOBAL VARIABLES
 
-//function to make things to react to scrolling
+var fatalPoints; //fatal accident point layer
+var firstMap; // fatality map
+var examplePoints;
+var secondMap; // example map
+
+// MAP OF FATALITIES 
+
+// function to make things to react to scrolling
 function fatalityScroll(){
         document.querySelectorAll('.fatal-points').forEach(function(div){
         //get element and element's property 'top'
@@ -166,7 +169,8 @@ function fatalityScroll(){
             y = rect.top;
             
         //set the top margin as a ratio of innerHeight
-        var topMargin = window.innerHeight;
+        var topMargin = window.innerHeight/2;
+
         //call setStyle when top of element is halfway up innerHeight
         if ((y-topMargin) < 0 && y > 0){  
             fatalPoints.setStyle(function(feature){
@@ -178,7 +182,7 @@ function fatalityScroll(){
 
 function createFatalityMap(){
     firstMap = L.map('firstMap',{
-        center:[38.889484, -77.035278],
+        center:[38.889484, -77.11],
         zoom: 12,
         scrollWheelZoom: false
     });
@@ -189,8 +193,8 @@ function createFatalityMap(){
 
     getData();
 }
-
-//retrieve fatality point layer
+ 
+// retrieve fatality point layer
 function getData(){
     fetch("data/crashes.geojson")
         .then(function(response){
@@ -206,64 +210,179 @@ function getData(){
         });        
 };
 
-//style function to dynamically change point style
+// style function to dynamically change point style
 function fatalStyle(feature, divID){
     return {
-        fillOpacity: opacityFilter(feature.properties, divID)
-        //fillColor: colorFilter(feature.properties, divID)
-        //weight: weightFilter(feature.properties, divID),
-        //color: strokeFilter(feature.properties, divID)
+        fillOpacity: opacityFilter(feature.properties, divID),
+        fillColor: colorFilter(feature.properties, divID),
+        weight: weightFilter(feature.properties, divID)/*,
+        color: strokeFilter(feature.properties, divID)*/
     };
 };
 
 
-//change point opacity based on property 'missing'
+// change point opacity based on property 'missing'
 function opacityFilter(props, divID){
     //console.log(divID);
     if (divID === "start"){    
         return 0
-    } else if ((props.missingCrashData = "n") && divID === "dcFatalities") {
-        console.log(props.missingCrashData); // returning appropriate number of y, but over 3000 n?? ask gareth
+    } else if (divID === "dcFatalities" && (props.missingCrashData === "n")) {
         return 1
-    } else if (divID === "missingFatalities" && (props.missingCrashData = "y")){
-        //console.log(props.missing)
+    } else if (divID === "missingFatalities" && (props.missingCrashData === "n")) {
+        return .5
+    } else if (divID === "missingFatalities" && (props.missingCrashData === "y")){
         return 1 
     } else {
         return 0
     };
 };
 
-/*
-//change point color based on property 'missing'
+
+// change point color based on property 'missing'
 function colorFilter(props, divID){
     if (divID === "start"){    
         return "#ffffff"
-    } else if (divID === "dcFatalities" && (props.inCrashData = "n")) {
+    } else if (divID === "dcFatalities" && (props.missingCrashData === "n")) {
+        return "#ffff00"
+    } else if (divID === "missingFatalities" && (props.missingCrashData === "n")) {
         return "#000000"
-    } else if (divID === "missingFatalities" && (props.inCrashData = "y")){
-        return "ffff00" 
+    } else if (divID === "missingFatalities" && (props.missingCrashData === "y")){
+        return "#ffff00" 
     } else {
         return "#ffffff"
     };
 };
-*/
 
 
+// change point stroke weight based on property 'missing'
+function weightFilter(props, divID){
+    if (divID === "start"){    
+        return 0
+    } else if (divID === "dcFatalities" && (props.missingCrashData === "n")) {
+        return 1
+    } else if (divID === "missingFatalities" && (props.missingCrashData === "n")) {
+        return .8
+    } else if (divID === "missingFatalities" && (props.missingCrashData === "y")){
+        return 1 
+    } else {
+        return 0
+    };
+};
 
+
+// change point stroke weight based on property 'missing'
+function strokeFilter(props, divID){
+    if (divID === "start"){    
+        return "#ffffff"
+    } else if (divID === "dcFatalities" && (props.missingCrashData === "n")) {
+        return "#ffff00"
+    } else if (divID === "missingFatalities" && (props.missingCrashData === "n")) {
+        return "#000000"
+    } else if (divID === "missingFatalities" && (props.missingCrashData === "y")){
+        return "#ffff00" 
+    } else {
+        return "#ffffff"
+    };
+};
+
+// add points to fatality map
 function pointToLayer(feature, latlng){
     var options = {
         radius: 5,
-        fillColor: "#FFFFFF",
+        fillColor: "#FFFF00",
         color: "#000",
         weight: .5,
         opacity: 1,
-        fillOpacity: 0.8
+        fillOpacity: 0.8,
+        className:'point'
     };
 
     var layer = L.circleMarker(latlng, options);
-    return layer 
+    return layer; 
+};
+
+// BAR CHART FADE
+// create array containing bar chart images
+var barChartImages = [
+    {id:"barChart1", src:"img/chart1.png"},
+    {id:"barChart2", src:"img/chart2.png"}
+];
+
+/*
+function barChartScroll(){
+    
+    document.querySelectorAll('.bar-chart').forEach(function(id){
+    //get element and element's property 'top'
+        console.log(id);
+        var rect = id.getBoundingClientRect();
+        y = rect.top;
+        
+    //set the top margin as a ratio of innerHeight
+    var topMargin = window.innerHeight/2;
+   
+    //call setStyle when top of element is halfway up innerHeight
+    if ((y-topMargin) < 0 && y > 0){  
+        document.querySelector("#base").src=src;
+    };                              
+});
+};
+*/
+
+// trigger image switch on scroll
+function barChartScroll(){
+    barChartImages.forEach(function(item){      
+        barChartPosition(item.id, item.src) 
+    });
+};
+
+function barChartPosition(id, src){
+    var barChartText = document.getElementById(id);
+    console.log(barChartText);
+    var rect = barChartText.getBoundingClientRect();
+    y = rect.top;
+
+    var topMargin = window.innerHeight/2;
+
+    if((y-topMargin) < 0 && y > 0){
+        document.querySelector("#base").src=src
+    };
+};
+
+// EXAMPLE MAP
+
+function createExampleMap(){
+    secondMap = L.map('secondMap',{
+        center:[38.889484, -77.11],
+        zoom: 12,
+        scrollWheelZoom: false
+    });
+    
+    L.tileLayer('https://api.mapbox.com/styles/v1/amclarke2/cl0g3m8oh000h14n0ok1oan43/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiYW1jbGFya2UyIiwiYSI6ImNrczZtNjkwdjAwZngycW56YW56cHUxaGsifQ._Cc2V5nKC5p2zfrYqw7Aww', { 
+        attribution: '&copy <a href="https://www.mapbox.com/map-feedback/">Mapbox</a> &copy <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(secondMap);
+    
+    //getExampleData();
 }
 
+function getExampleData(){
+    
+    fetch("data/crashes.geojson")
+        .then(function(response){
+            
+            return response.json(); //
+        })
+        .then(function(json){
+            //create a geojson layer and add to map
+            console.log("hello");
+            examplePoints = L.geoJson(json, {
+                pointToLayer: pointToLayer
+            }).addTo(secondMap);
 
-document.addEventListener('DOMContentLoaded',createFatalityMap)
-document.addEventListener('scroll',fatalityScroll)
+        });        
+};
+
+
+document.addEventListener('DOMContentLoaded', createFatalityMap)
+document.addEventListener('DOMContentLoaded', createExampleMap)
+document.addEventListener('scroll', fatalityScroll)
+//document.addEventListener('scroll', barChartScroll)

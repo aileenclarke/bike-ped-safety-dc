@@ -9,8 +9,12 @@ body{
     width: 100vw;
     
 }
-/* line graph style */
 
+p{
+    font-size: 1.5em;
+}
+
+/* line graph style */
 .axis path{
     stroke:black;
     stroke-width:2px ;
@@ -33,9 +37,28 @@ body{
     font-family:"Arial Black", Gadget, sans-serif;
 }
 
-/* map style */
+/* fatality map style */
 
 #firstMap {
+    height: 80vh;
+    width: 100%;
+    display: inline-block;
+    padding: 20px;
+}
+
+/* bar chart style */
+.background {
+	position: absolute;
+	
+}
+
+#barChart0 {
+	translate: 0 -10%;
+}
+
+
+/* example map style */
+#secondMap {
     height: 80vh;
     width: 100%;
     display: inline-block;

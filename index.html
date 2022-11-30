@@ -23,7 +23,7 @@
             <div class="row" >
                 <div class="center title">
                     <!--title text-->
-                    <h1>Bike and Pedestrian Safety in Washington, DC</h1>
+                    <h2>Bike and Pedestrian Safety in Washington, DC</h2>
                     <!--subtitle or author-->
                     <p class="author">Aileen Clarke</p>
                 </div>
@@ -52,6 +52,7 @@
                 </div>
             </div>
 
+            <!--lineGraph-->
             <div class="row">
                 <div class="center">
                     <figure class="lineGraph">
@@ -77,18 +78,19 @@
                 </div>
             </div>   
 
+            <!--map of fatalities-->
             <div class="scroll-container">
                 <div class="background-item">
-                    <div id="firstMap" class="vert-center"></div>
+                    <div id="firstMap" class="vert-right"></div>
                 </div>
                 <div class="foreground-item no-event">
                     <div class="row">
-                        <div class="fatal-points center background-transparent" id="start">
+                        <div class="fatal-points left background-transparent" id="start">
                                 <p class="no-margin"></p>
                         </div>
                     </div> 
                     <div class="row">
-                        <div class="fatal-points center background-transparent" id="dcFatalities">
+                        <div class="fatal-points left background-transparent" id="dcFatalities">
                             <p class="no-margin">However, as I explored the data I noticed some inconsistencies. The dataset, which is 
                                 updated weekly, was missing some notable incidents. If I wasn't following local news, 
                                 I may have moved forward without much concern. 
@@ -96,7 +98,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="fatal-points center background-transparent" id="missingFatalities">
+                        <div class="fatal-points left background-transparent" id="missingFatalities">
                             <p class="no-margin"> All these fatal incidents were missing from the crash data set. 
                             </p>
                         </div>
@@ -142,11 +144,53 @@
                 </div>
             </div> 
 
-            <div class="row">
-                <div class="center">
-                    <p>gRAPH?</p>
+            <!--bar chart-->
+            <div class="scroll-container">
+                <div class="background-item">
+                    <img class="background" id="base">
                 </div>
-            </div> 
+                <div class="foreground-item">
+                    <div class="row">
+                        <div class="bar-chart center background-transparent" id="barchart1">
+                                <p class="no-margin">hello</p>
+                        </div>
+                    </div> 
+                </div>
+                <div class="foreground-item">
+                    <div class="row">
+                        <div class="bar-chart center background-transparent" id="barchart2">
+                                <p class="no-margin">hello again</p>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+
+
+
+            <div class="scroll-container">
+                <div class="background-item">
+                    <div id="secondMap" class="vert-right"></div>
+                </div>
+                <div class="foreground-item no-event">
+                    <div class="row">
+                        <div class="fatal-points left background-transparent" id="tk1">
+                                <p class="no-margin">TKTK</p>
+                        </div>
+                    </div> 
+                    <div class="row">
+                        <div class="fatal-points left background-transparent" id="tk2">
+                            <p class="no-margin">TKTK
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="fatal-points left background-transparent" id="tk3">
+                            <p class="no-margin"> TKTK 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <div class="row">
                 <div class="center">
