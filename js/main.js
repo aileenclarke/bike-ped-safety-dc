@@ -156,9 +156,16 @@ window.onload = function(){
 
 var fatalPoints; // fatal accident point layer
 var fatalityMap; // fatality map
+
 var examplePoints; // fatal accident point layer
-var dcWards; // dc ward polygon layer
 var exampleMap; // example map
+
+var interactiveMap; // interactive map
+var crashPoints; // fatal accident point layer
+var dcWards; // dc ward polygon layer
+var dcHIN; // dc high injury network line layer
+var bikeLanes; // dc bike lanes line layer
+
 
 // MAP OF FATALITIES 
 
@@ -188,7 +195,7 @@ function createFatalityMap(){
         scrollWheelZoom: false
     });
 
-    L.tileLayer('https://api.mapbox.com/styles/v1/amclarke2/cl0g3m8oh000h14n0ok1oan43/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiYW1jbGFya2UyIiwiYSI6ImNrczZtNjkwdjAwZngycW56YW56cHUxaGsifQ._Cc2V5nKC5p2zfrYqw7Aww', { 
+    L.tileLayer('https://api.mapbox.com/styles/v1/amclarke2/clb41skpq000814kyotn3s90q/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiYW1jbGFya2UyIiwiYSI6ImNrczZtNjkwdjAwZngycW56YW56cHUxaGsifQ._Cc2V5nKC5p2zfrYqw7Aww', { 
         attribution: '&copy <a href="https://www.mapbox.com/map-feedback/">Mapbox</a> &copy <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
     }).addTo(fatalityMap);
 
@@ -216,8 +223,8 @@ function fatalStyle(feature, divID){
     return {
         fillOpacity: opacityFilter(feature.properties, divID),
         fillColor: colorFilter(feature.properties, divID),
-        weight: weightFilter(feature.properties, divID)/*,
-        color: strokeFilter(feature.properties, divID)*/
+        weight: weightFilter(feature.properties, divID),
+        color: strokeFilter(feature.properties, divID)
     };
 };
 
@@ -242,15 +249,15 @@ function opacityFilter(props, divID){
 // change point color based on property 'missing'
 function colorFilter(props, divID){
     if (divID === "start"){    
-        return "#ffffff"
+        return "#ead794"
     } else if (divID === "dcFatalities" && (props.missingCrashData === "n")) {
-        return "#ffff00"
+        return "#ead794"
     } else if (divID === "missingFatalities" && (props.missingCrashData === "n")) {
-        return "#000000"
+        return "#ead794"
     } else if (divID === "missingFatalities" && (props.missingCrashData === "y")){
-        return "#ffff00" 
+        return "#ee9b00" 
     } else {
-        return "#ffffff"
+        return "#ead794"
     };
 };
 
@@ -262,7 +269,7 @@ function weightFilter(props, divID){
     } else if (divID === "dcFatalities" && (props.missingCrashData === "n")) {
         return 1
     } else if (divID === "missingFatalities" && (props.missingCrashData === "n")) {
-        return .8
+        return .5
     } else if (divID === "missingFatalities" && (props.missingCrashData === "y")){
         return 1 
     } else {
@@ -271,18 +278,18 @@ function weightFilter(props, divID){
 };
 
 
-// change point stroke weight based on property 'missing'
+// change point stroke color based on property 'missing'
 function strokeFilter(props, divID){
     if (divID === "start"){    
-        return "#ffffff"
+        return "#d8b957"
     } else if (divID === "dcFatalities" && (props.missingCrashData === "n")) {
-        return "#ffff00"
+        return "#d8b957"
     } else if (divID === "missingFatalities" && (props.missingCrashData === "n")) {
-        return "#000000"
+        return "#d8b957"
     } else if (divID === "missingFatalities" && (props.missingCrashData === "y")){
-        return "#ffff00" 
+        return "#bd6f1d" 
     } else {
-        return "#ffffff"
+        return "#d8b957"
     };
 };
 
@@ -294,7 +301,7 @@ function pointToLayer1(feature, latlng){
         color: "#000",
         weight: .5,
         opacity: 1,
-        fillOpacity: 0.8,
+        fillOpacity: 1,
         className:'point'
     };
 
@@ -331,15 +338,14 @@ function barChartScroll(){
 
 // trigger image switch on scroll
 function barChartScroll(){
-    barChartImages.forEach(function(item){      
-        barChartPosition(item.id, item.src) 
+    barChartImages.forEach(function(item){   
+        barChartPosition(item.id, item.src); 
     });
 };
 
 function barChartPosition(id, src){
     var barChartText = document.getElementById(id);
-    console.log(barChartText);
-    var rect = barChartText.getBoundingClientRect();
+    var rect = barChartText.getBoundingClientRect(id);
     y = rect.top;
 
     var topMargin = window.innerHeight/2;
@@ -358,22 +364,21 @@ function createExampleMap(){
         scrollWheelZoom: false
     });
     
-    L.tileLayer('https://api.mapbox.com/styles/v1/amclarke2/cl0g3m8oh000h14n0ok1oan43/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiYW1jbGFya2UyIiwiYSI6ImNrczZtNjkwdjAwZngycW56YW56cHUxaGsifQ._Cc2V5nKC5p2zfrYqw7Aww', { 
+    L.tileLayer('https://api.mapbox.com/styles/v1/amclarke2/clb41skpq000814kyotn3s90q/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiYW1jbGFya2UyIiwiYSI6ImNrczZtNjkwdjAwZngycW56YW56cHUxaGsifQ._Cc2V5nKC5p2zfrYqw7Aww', { 
         attribution: '&copy <a href="https://www.mapbox.com/map-feedback/">Mapbox</a> &copy <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
     }).addTo(exampleMap);
     
     getExampleData();
 }
 
-function getExampleData(){
-    
+function getExampleData(){ 
     fetch("data/crashes.geojson")
         .then(function(response){
             return response.json(); //
         })
         .then(function(json){
             //create a geojson layer and add to map
-            console.log("hello");
+            
             examplePoints = L.geoJson(json, {
                 pointToLayer: pointToLayer2
             }).addTo(exampleMap);
@@ -382,16 +387,28 @@ function getExampleData(){
 };
 
 function exampleStyle(feature){
-    var colorToUse;
-    var missing = feature.properties.missing;
+    return {
+        fillColor: exampleColorFilter(feature.properties),
+        color: exampleStrokeFilter(feature.properties)
+    };
+};
 
-    if (missing === "n") colorToUse = "#ffffff";
-    else colorToUse = "#ffff00";
+// change point color based on property 'missing'
+function exampleColorFilter(props){
+    if (props.missingCrashData === "n"){    
+        return "#ead794"
+    } else {
+        return "#ee9b00"
+    };
+};
 
-    return{
-        "color": colorToUse
-    }
-
+// change point stroke weight based on property 'missing'
+function exampleStrokeFilter(props){
+    if (props.missingCrashData === "n"){    
+        return "#d8b957"
+    } else {
+        return "#bd6f1d"
+    };
 };
 
 var fly = [
@@ -449,7 +466,95 @@ function pointToLayer2(feature, latlng){
         color: "#000",
         weight: .5,
         opacity: 1,
-        fillOpacity: 0.8,
+        fillOpacity: 1,
+        className:'point'
+    };
+
+    var layer = L.circleMarker(latlng, options);
+
+    var popupContent = "<p><b>name:</b> " + feature.properties.name + "</p>";
+    layer.bindPopup(popupContent);
+
+    return layer; 
+};
+
+// INTERACTIVE MAP
+
+function createInteractiveMap(){
+    interactiveMap = L.map('interactiveMap',{
+        center:[38.889484, -77.11],
+        zoom: 12,
+        scrollWheelZoom: false,
+        
+    });
+    
+    L.tileLayer('https://api.mapbox.com/styles/v1/amclarke2/clb41skpq000814kyotn3s90q/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiYW1jbGFya2UyIiwiYSI6ImNrczZtNjkwdjAwZngycW56YW56cHUxaGsifQ._Cc2V5nKC5p2zfrYqw7Aww', { 
+        attribution: '&copy <a href="https://www.mapbox.com/map-feedback/">Mapbox</a> &copy <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(interactiveMap);
+
+    getInteractiveData();
+
+    /*
+    interactiveMap.options.layers = [crashPoints,dcWards,dcHIN,bikeLanes]
+    
+    var overlays = {
+        'Fatalities': crashPoints,
+        'Wards': dcWards,
+        'High Incident Network': dcHIN,
+        'Bike Lanes': bikeLanes
+    };
+
+    var layerControl = L.control.layers(overlays).addTo(interactiveMap);
+    layerControl.addOverlayLayer(overlays);
+    */
+    
+}
+
+function getInteractiveData(){ 
+    fetch("data/crashes.geojson")
+        .then(function(response){
+            return response.json(); //
+        })
+        .then(function(json){
+            //create a geojson layer and add to map
+            crashPoints = L.geoJson(json, {
+                pointToLayer: pointToLayer3
+            }).addTo(interactiveMap);
+            //examplePoints.setStyle(exampleStyle);
+        }); 
+    fetch("data/dcWards.geojson")
+        .then(function(response){
+            return response.json();
+        })
+        .then(function(json){
+            dcWards = L.geoJson(json).addTo(interactiveMap);
+        });
+    fetch("data/dcHIN.geojson")
+        .then(function(response){
+            return response.json();
+        })      
+        .then(function(json){
+            dcHIN = L.geoJson(json, {
+                //onEachFeature: onEachFeatureHIN
+            }).addTo(interactiveMap);
+        });
+    fetch("data/bikeLanes.geojson")
+        .then(function(response){
+            return response.json();
+        })      
+        .then(function(json){
+            bikeLanes= L.geoJson(json).addTo(interactiveMap);
+        });
+};
+
+function pointToLayer3(feature, latlng){
+    var options = {
+        radius: 5,
+        fillColor: "#FFFF00",
+        color: "#000",
+        weight: .5,
+        opacity: 1,
+        fillOpacity: 1,
         className:'point'
     };
 
@@ -463,6 +568,7 @@ function pointToLayer2(feature, latlng){
 
 document.addEventListener('DOMContentLoaded', createFatalityMap)
 document.addEventListener('DOMContentLoaded', createExampleMap)
+document.addEventListener('DOMContentLoaded', createInteractiveMap)
 document.addEventListener('scroll', fatalityScroll)
 document.addEventListener('scroll', exampleScroll)
-//document.addEventListener('scroll', barChartScroll)
+document.addEventListener('scroll', barChartScroll)
