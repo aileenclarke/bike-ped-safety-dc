@@ -161,10 +161,11 @@ var examplePoints; // fatal accident point layer
 var exampleMap; // example map
 
 var interactiveMap; // interactive map
-var crashPoints; // fatal accident point layer
-var dcWards; // dc ward polygon layer
-var dcHIN; // dc high injury network line layer
-var bikeLanes; // dc bike lanes line layer
+var missingCrashPoints = L.geoJson(); // fatalities missing from dc crash reports
+var includedCrashPoints = L.geoJson(); // fatalities included in dc crash reports
+var dcWards = L.geoJson(); // dc ward polygon layer
+var dcHIN = L.geoJson(); // dc high injury network line layer
+var bikeLanes = L.geoJson(); // dc bike lanes line layer
 
 
 // MAP OF FATALITIES 
@@ -378,7 +379,6 @@ function getExampleData(){
         })
         .then(function(json){
             //create a geojson layer and add to map
-            
             examplePoints = L.geoJson(json, {
                 pointToLayer: pointToLayer2
             }).addTo(exampleMap);
@@ -419,18 +419,18 @@ var fly = [
     },
     {
         id: "example1",
-        location: [38.837,-76.99],
+        location: [38.83604110351087, -76.99579140014306],
         zoom: 15
     }, 
     {
         id: "example2",
-        location: [38.875,-76.933],
-        zoom: 15
+        location: [38.88147148920925, -76.93301621616287],
+        zoom: 14.5
     },
     {
         id:"example3",
-        location: [38.927, -76.986],
-        zoom: 14
+        location: [38.9265607809075, -76.99369603295193],
+        zoom: 14.5
     }
 ];
 
@@ -482,52 +482,49 @@ function pointToLayer2(feature, latlng){
 
 function createInteractiveMap(){
     interactiveMap = L.map('interactiveMap',{
-        center:[38.889484, -77.11],
-        zoom: 12,
-        scrollWheelZoom: false,
-        
+        center:[38.8985, -77.0319],
+        zoom: 11.5,
+        //scrollWheelZoom: false,
     });
     
     L.tileLayer('https://api.mapbox.com/styles/v1/amclarke2/clb41skpq000814kyotn3s90q/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiYW1jbGFya2UyIiwiYSI6ImNrczZtNjkwdjAwZngycW56YW56cHUxaGsifQ._Cc2V5nKC5p2zfrYqw7Aww', { 
         attribution: '&copy <a href="https://www.mapbox.com/map-feedback/">Mapbox</a> &copy <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
     }).addTo(interactiveMap);
 
-    getInteractiveData();
+    var layerControl = L.control.layers().addTo(interactiveMap);
+    getInteractiveData(layerControl);
 
-    /*
-    interactiveMap.options.layers = [crashPoints,dcWards,dcHIN,bikeLanes]
     
-    var overlays = {
-        'Fatalities': crashPoints,
+    //interactiveMap.options.layers = [missingCrashPoints,dcWards,dcHIN,bikeLanes]
+    
+    /*var overlays = {
+        'Fatalities': missingCrashPoints,
         'Wards': dcWards,
         'High Incident Network': dcHIN,
         'Bike Lanes': bikeLanes
-    };
+    };*/
 
-    var layerControl = L.control.layers(overlays).addTo(interactiveMap);
-    layerControl.addOverlayLayer(overlays);
-    */
+   
+    //layerControl.addOverlayLayer(overlays);
+    
     
 }
 
-function getInteractiveData(){ 
-    fetch("data/crashes.geojson")
-        .then(function(response){
-            return response.json(); //
-        })
-        .then(function(json){
-            //create a geojson layer and add to map
-            crashPoints = L.geoJson(json, {
-                pointToLayer: pointToLayer3
-            }).addTo(interactiveMap);
-            //examplePoints.setStyle(exampleStyle);
-        }); 
+function getInteractiveData(layerControl){ 
     fetch("data/dcWards.geojson")
         .then(function(response){
             return response.json();
         })
         .then(function(json){
-            dcWards = L.geoJson(json).addTo(interactiveMap);
+            dcWards = L.geoJson(json, {
+                style:function(feature){
+                    return {
+                        color: "#94d2bd",
+                        weight: 1.5,
+                    }
+                }
+            }).addTo(interactiveMap);
+            layerControl.addOverlay(dcWards, "Wards");
         });
     fetch("data/dcHIN.geojson")
         .then(function(response){
@@ -535,23 +532,110 @@ function getInteractiveData(){
         })      
         .then(function(json){
             dcHIN = L.geoJson(json, {
-                //onEachFeature: onEachFeatureHIN
+                style:function(feature){
+                    return {
+                        color: hinStroke(feature.properties),
+                        weight: 1
+                    }
+                }
             }).addTo(interactiveMap);
+            layerControl.addOverlay(dcHIN, "High Injury Network");
+
         });
     fetch("data/bikeLanes.geojson")
         .then(function(response){
             return response.json();
         })      
         .then(function(json){
-            bikeLanes= L.geoJson(json).addTo(interactiveMap);
+            bikeLanes= L.geoJson(json, {
+                style:function(feature){
+                    return {
+                        color:"white",
+                        weight: 1
+                        //stroke:laneStroke(feature.properties)
+                    }
+                }
+            }).addTo(interactiveMap);
+            layerControl.addOverlay(bikeLanes, "Bike Lanes");
+
+        });
+    fetch("data/includedCrashes.geojson")
+        .then(function(response){
+            return response.json(); //
+        })
+        .then(function(json){
+            //create a Leaflet GeoJSON layer and add it to the map
+            includedCrashPoints = L.geoJson(json,{
+                //pop ups
+                onEachFeature:function(feature, layer){
+                    var includedCrashPoints = createIncludedPopupContent(feature);
+                    layer.bindPopup(includedCrashPoints)
+                },
+                //convert from points to layers
+                pointToLayer: pointToLayerIncluded
+            }).addTo(interactiveMap);
+            layerControl.addOverlay(missingCrashPoints, "Fatal Accidents included in DC Crash Data"); 
+
+        });
+    fetch("data/missingCrashes.geojson")
+        .then(function(response){
+            return response.json(); //
+        })
+        .then(function(json){
+            //create a Leaflet GeoJSON layer and add it to the map
+            missingCrashPoints = L.geoJson(json,{
+                //pop ups
+                onEachFeature:function(feature, layer){
+                    var missingPopupContent = createMissingPopupContent(feature);
+                    layer.bindPopup(missingPopupContent)
+                },
+                //convert from points to layers
+                pointToLayer: pointToLayerMissing
+            }).addTo(interactiveMap);
+            layerControl.addOverlay(missingCrashPoints, "Fatal Accidents missing from DC Crash Data"); 
         });
 };
 
-function pointToLayer3(feature, latlng){
+function hinStroke(props){
+    if (props.Tier_1 === 1){    
+        return "#e63946"
+    } else if (props.Tier_2 === 1){
+        return "#e63946"
+    } else if (props.Tier_3 === 1){
+        return "#e63946"
+    } else {
+        return "#e63946"
+    };
+};
+
+function createMissingPopupContent(feature){
+        var missingCrashPoints = "<p><b>Victim Name:</b> " + feature.properties.name + 
+        "</p><p><b>Victim Type:</b> " + feature.properties.vic_type + 
+        "</p><p><b>Victim Age:</b> " + feature.properties.vic_age +
+        "</p><p><b>Total Victims:</b> " + feature.properties.vic_tot +
+        "</p><p><b>Date:</b> " + feature.properties.date +
+        "</p><p><b>Ward:</b> " + feature.properties.WARD +
+        "</p><p><b>Included in city crash data:</b> " + "No" +
+        "</p><p><b>Notes:</b> " + feature.properties.notes
+        return missingCrashPoints 
+};
+
+function createIncludedPopupContent(feature){
+        var includedCrashPoints = 
+        "</p><p><b>Pedestrian Fatalities:</b> " + feature.properties.FATAL_PEDE +
+        "</p><p><b>Bicyclist Fatalities:</b> " + feature.properties.FATAL_BICY +
+        "</p><p><b>Driver Fatalities:</b> " + feature.properties.FATAL_DRIV +
+        "</p><p><b>Passenger Fatalities:</b> " + feature.properties.FATALPASSE +
+        "</p><p><b>Date:</b> " + feature.properties.FROMDATE +
+        "</p><p><b>Ward:</b> " + feature.properties.WARD_1
+        return includedCrashPoints 
+};
+
+function pointToLayerMissing(feature, latlng){
     var options = {
         radius: 5,
-        fillColor: "#FFFF00",
-        color: "#000",
+        fillColor: "#ee9b00",
+        color: "#bd6f1d",
         weight: .5,
         opacity: 1,
         fillOpacity: 1,
@@ -559,10 +643,21 @@ function pointToLayer3(feature, latlng){
     };
 
     var layer = L.circleMarker(latlng, options);
+    return layer; 
+};
 
-    var popupContent = "<p><b>name:</b> " + feature.properties.name + "</p>";
-    layer.bindPopup(popupContent);
+function pointToLayerIncluded(feature, latlng){
+    var options = {
+        radius: 5,
+        fillColor: "#ead794",
+        color: "#d8b957",
+        weight: .5,
+        opacity: 1,
+        fillOpacity: 1,
+        className:'point'
+    };
 
+    var layer = L.circleMarker(latlng, options);
     return layer; 
 };
 

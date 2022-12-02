@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="dist/scrollmap.css">
         <link rel="stylesheet" href="lib/leaflet/leaflet.css">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
         
     </head>
 
@@ -30,7 +30,7 @@
             </div>
 
             <div class="row">
-                <div class="center">
+                <div class="center main-text">
                     <p>I lived, walked, and biked in DC for six years, until August 2021. 
                         I continue to read the local news and follow local efforts to improve safety in the city. 
                     </p>
@@ -38,7 +38,7 @@
             </div>
 
             <div class="row">
-                <div class="center">
+                <div class="center main-text">
                     <p>Since the COVID pandemic, traffic incidents are on the rise across the country. 
                         The limitations of Vision Zero plans put in place over the last 15 years are showing.
                     </p>
@@ -64,16 +64,16 @@
             
             <!--lineGraph-->
             <div class="row">
-                <div class="left">
-                    <p class="vert-center">Like the country as a whole, DC has seen a rise in incidents.</p>
+                <div class="center">
+                    <p class="vert-center main-text">Like the country as a whole, DC has seen a rise in incidents.</p>
                 </div>
-                <div class="right">
+                <div class="center">
                     <figure class="lineGraph"></figure>
                 </div>
             </div>
             
             <div class="row">
-                <div class="center">
+                <div class="center main-text">
                     <p>3 bicyclists were killed in as many weeks this summer. 2 women were killed as they 
                         sat on a restaurant patio. A child killed on their bike in a crosswalk.
                     </p>
@@ -81,7 +81,7 @@
             </div>    
 
             <div class="row">
-                <div class="center">
+                <div class="center main-text">
                     <p>With these incidents in mind, I retrieved DC's crash data from the city government's 
                         online portal. I planned to analyze the 2021-22 data to date and look at the hotspots 
                         for incidents involving bicyclists, pedestrians, and vehicles. 
@@ -118,7 +118,7 @@
             </div>
             
             <div class="row">
-                <div class="center">
+                <div class="center main-text">
                     <p>I researched the dataset further and found a number of significant caveats. MPD officers report to the scene 
                         of a crash and complete the crash report form. This report is completed and published to the dataset each week. 
                         However, the crash report is not updated. If a victim dies hours, days, or even months later that isn't updated 
@@ -129,7 +129,7 @@
             </div>
             
             <div class="row">
-                <div class="center">
+                <div class="center main-text">
                     <p>To the city's credit, they were upfront with these caveats. However, on the same page where they list these caveats, 
                         they also state that the purpose of the dataset is to “provide crash location data  to users interested in exploring 
                         spatial patterns and creating maps in support of safety analysis.” Since I was focused on traffic violence involving 
@@ -138,7 +138,7 @@
             </div> 
 
             <div class="row">
-                <div class="center">
+                <div class="center main-text">
                     <p>Now I was confronting a new problem. More data than ever is available for us to download and use. This is a double edged 
                         sword. No dataset is perfect, so how do we decide what is good enough? The choice has implications on analysis and 
                         storytelling. Do we not tell a story because the data isn't perfect? Do we move forward knowing the conclusions we 
@@ -146,31 +146,38 @@
                 </div>
             </div> 
 
-            <div class="row">
-                <div class="center">
-                    <p>The nature of my dataset recentered my focus. I realized it wouldn't be easy or even possible to gather my own data 
-                        from several cities to compare to DC. I'd have to look at less granularity than I'd hoped. I also realized that I 
-                        could still do some analysis, but that it wouldn't be as GIS heavy.
-                    </p>
-                </div>
-            </div> 
+            
 
             <!--bar chart-->
             <div class="scroll-container">
                 <div class="background-item">
-                    <img class="background bar-chart vert-center" id="base">
+                    <img class="background bar-chart vert-center left" id="base">
                 </div>
                 <div class="foreground-item">
                     <div class="row">
-                        <div class="bar-chart center background-transparent" id="barChart1">
-                                <p class="no-margin">hello</p>
+                        <div class="bar-chart background-transparent right main-text" id="barChart1">
+                                <p class="no-margin bar-chart-text">Washington, DC has eight wards. From January 2021 through October 2022, 
+                                    the rate of traffic fatalities per 100,000 residents is highest in Wards 7 and 8, east of the Anacostia River. 
+                                </p>
                         </div>
                     </div> 
                 </div>
                 <div class="foreground-item">
                     <div class="row">
-                        <div class="bar-chart center background-transparent" id="barChart2">
-                                <p class="no-margin">hello again</p>
+                        <div class="bar-chart background-transparent right main-text" id="barChart1">
+                                <p class="no-margin bar-chart-text">Wards 7 and 8 also have the highest raw number of traffic fatalities. The 
+                                    crash data set provided by the city of DC shows <b>12 fatalities</b> and <b>8 fatalities</b> for wards 7 and 8, respectively, 
+                                    over the same time period.
+                                </p>
+                        </div>
+                    </div> 
+                </div>
+                <div class="foreground-item">
+                    <div class="row">
+                        <div class="bar-chart vert-center background-transparent right main-text" id="barChart2">
+                                <p class="no-margin bar-chart-text">But the city's crash data set undercounts the fatalities in <b>five</b> of the eight
+                                    wards. Ward 7 had the most missing fatalities.
+                                </p>
                         </div>
                     </div> 
                 </div>
@@ -185,23 +192,26 @@
                 <div class="foreground-item no-event">
                     <div class="row">
                         <div class="fatal-points left background-transparent" id="example0">
-                                <p class="no-margin">TKTK</p>
+                                <p class="no-margin">Let's look at some of the fatalities missing from that dataset.</p>
                         </div>
                     </div> 
                     <div class="row">
                         <div class="fatal-points left background-transparent" id="example1">
-                                <p class="no-margin">TKTK</p>
+                                <p class="no-margin">Four of the five missing fatal incidents in Ward 7 are seen here. They include father and son, Demetrius Flutz and 
+                                    Amir Fultz, Kaidyn Green, and Jasmine Butler. </p>
                         </div>
                     </div> 
                     <div class="row">
                         <div class="fatal-points left background-transparent" id="example2">
-                            <p class="no-margin">TKTK
+                            <p class="no-margin">In Ward 8, all three missing incidents can be seen here. Two of the victims remain unnamed. Anthony Shaw was killed
+                                on Southern Ave SE, where three other fatal accidents occurred during this time period.
                             </p>
                         </div>
                     </div>
                     <div class="row">
                         <div class="fatal-points left background-transparent" id="example3">
-                            <p class="no-margin"> TKTK 
+                            <p class="no-margin"> In NE DC, two fatalities happened within three blocks of each other. 5 year old Alison Hart was killed in a crosswalk
+                                while riding her bicycle. The other victim is unnamed.
                             </p>
                         </div>
                     </div>
@@ -209,14 +219,14 @@
             </div>
 
             <div class="row">
-                <div class="center">
+                <div class="center main-text">
                     <p>tktktk
                     </p>
                 </div>
             </div>  
 
             <div class="row">
-                <div class="center">
+                <div class="center main-text">
                     <p>tktkktk  
                     </p>
                 </div>
@@ -232,14 +242,29 @@
             </div> 
 
             <div class="row">
-                <div class="center">
+                <div class="center main-text">
                     <p>tktktk</p>
                 </div>
             </div> 
 
             <div class="row">
-                <div class="center">
+                <div class="center main-text">
                     <p>Denouement. Vision zero is great, but we should be looking beyond it.</p>
+                </div>
+            </div> 
+
+            <!--credits-->
+            <div class="row">
+                <div class="center main-text">
+                    <h3>Maps, Graphics, Text, Code</h3>
+                    <p>Aileen Clarke</p>
+                    <br>
+                    <h3 class = "sources">Sources</h3>
+                    <a href="https://opendata.dc.gov/datasets/DCGIS::crashes-in-dc/about" target="_blank">DC Crash Data</a><br> 
+                    <a href="https://opendata.dc.gov/datasets/DCGIS::bicycle-lanes/about" target="_blank">DC Bike Lanes</a><br> 
+                    <a href="https://dcfamiliesforsafestreets.org/2022/11/08/world-day-of-remembrance-2022/" target="_blank">DC Familes for Safe Streets</a><br> 
+                    <a href="https://opendata.dc.gov/datasets/DCGIS::wards-from-2012/about" target="_blank">DC Wards</a><br> 
+                    <a href="https://visionzero.dc.gov/" target="_blank">Vision Zero DC</a><br> 
                 </div>
             </div> 
 
