@@ -90,3 +90,9 @@ a:-webkit-any-link {
     text-decoration: underline;
     
 }
+
+.leaflet-popup-content p {
+    margin: 4px 0 !important;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1.2em;
+}

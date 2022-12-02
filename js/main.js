@@ -25,7 +25,7 @@ window.onload = function(){
             .append("svg") //put a new svg in the body
             .attr("width", lineW)
             .attr("height", lineH)
-            .style("background-color", "rgba(0,0,0,0.2)");
+            .style("background-color", "white");
             
             
         /*var innerRect = lineSVG.append("rect")
@@ -373,19 +373,39 @@ function createExampleMap(){
 }
 
 function getExampleData(){ 
-    fetch("data/crashes.geojson")
+    fetch("data/includedCrashes.geojson")
         .then(function(response){
             return response.json(); //
         })
         .then(function(json){
             //create a geojson layer and add to map
-            examplePoints = L.geoJson(json, {
-                pointToLayer: pointToLayer2
+            includedCrashPoints = L.geoJson(json, {
+                onEachFeature:function(feature, layer){
+                    var includedCrashPoints = createIncludedPopupContent(feature);
+                    layer.bindPopup(includedCrashPoints)
+                },
+                pointToLayer: pointToLayerIncluded
             }).addTo(exampleMap);
-            examplePoints.setStyle(exampleStyle);
+            //examplePoints.setStyle(exampleStyle);
+        });
+    fetch("data/missingCrashes.geojson")
+        .then(function(response){
+            return response.json(); //
+        })
+        .then(function(json){
+            //create a geojson layer and add to map
+            missingCrashPoints = L.geoJson(json, {
+                onEachFeature:function(feature, layer){
+                    var missingPopupContent = createMissingPopupContent(feature);
+                    layer.bindPopup(missingPopupContent)
+                },
+                pointToLayer: pointToLayerMissing
+            }).addTo(exampleMap);
+            //examplePoints.setStyle(exampleStyle);
         });        
 };
 
+/*
 function exampleStyle(feature){
     return {
         fillColor: exampleColorFilter(feature.properties),
@@ -410,6 +430,7 @@ function exampleStrokeFilter(props){
         return "#bd6f1d"
     };
 };
+*/
 
 var fly = [
     {
@@ -548,6 +569,10 @@ function getInteractiveData(layerControl){
         })      
         .then(function(json){
             bikeLanes= L.geoJson(json, {
+                onEachFeature:function(feature, layer){
+                    var bikeLanePopup = createBikeLanePopup(feature);
+                    layer.bindPopup(bikeLanes)
+                },
                 style:function(feature){
                     return {
                         color:"white",
@@ -606,6 +631,16 @@ function hinStroke(props){
     } else {
         return "#e63946"
     };
+};
+
+function createBikeLanePopup(feature){
+    var bikeLanePopup = "<p><b>Conventional Bike Lane:</b> " + feature.properties.BIKELANE_2 + 
+    "</p><p><b>Dual Protected Bike Lane:</b> " + feature.properties.BIKELANE_D + 
+    "</p><p><b>Dual Buffered Bike Lane:</b> " + feature.properties.BIKELANE_3 +
+    "</p><p><b>Protected Bike Lane:</b> " + feature.properties.BIKELANE_4 +
+    "</p><p><b>Buffered Bike Lane:</b> " + feature.properties.BIKELANE_B +
+    "</p><p><b>Road:</b> " + feature.properties.ROUTENAME
+    return bikeLanePopup 
 };
 
 function createMissingPopupContent(feature){
