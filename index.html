@@ -20,10 +20,12 @@
     <body>
         <div class="content">
 
-            <div class="row" >
-                <div class="center title">
+
+            <!---->
+            <div class="row">
+                <div class="center title"  >
                     <!--title text-->
-                    <h2>Bike and Pedestrian Safety in Washington, DC</h2>
+                    <h2>Traffic Fatalities in Washington, DC</h2>
                     <!--subtitle or author-->
                     <p class="author">Aileen Clarke</p>
                 </div>
@@ -40,7 +42,7 @@
             <div class="row">
                 <div class="center main-text">
                     <p>Since the COVID pandemic, traffic incidents are on the rise across the country. 
-                        The limitations of Vision Zero plans put in place over the last 15 years are showing.
+                        The limitations of Vision Zero plans put in place over the last decade are showing.
                     </p>
                 </div>
             </div>
@@ -48,7 +50,7 @@
             <!--lineGraph-->
             <div class="row">
                 <div class="center">
-                    <p class="vert-center main-text">Like the country as a whole, DC has seen a rise in incidents.</p>
+                    <p class="vert-center main-text">Like the country as a whole, DC has seen a rise in fatal traffic incidents.</p>
                 </div>
             <!--</div>
             <div class="row">-->
@@ -81,7 +83,7 @@
                 </div>
                 <div class="foreground-item no-event">
                     <div class="row">
-                        <div class="fatal-points left background-transparent" id="start">
+                        <div class="fatal-points left background-transparent beginning" id="start">
                                 <p class="no-margin"></p>
                         </div>
                     </div> 
@@ -104,6 +106,18 @@
             
             <div class="row">
                 <div class="center main-text">
+                    <p> The city's crash data set showed <b>45</b> incidents resulting in <b>50 fatalities</b>. The fatalities include
+                        1 bicyclist, 22 pedestrians, 24 drivers, and 3 passengers.
+                        <br>
+                        <br>
+                        I found <b>19</b> incidents missing from the dataset. These incidents resulted in <b>22 fatalities</b>. The fatalities
+                        included 4 bicyclists, 7 pedestrians, 5 drivers, 3 passengers, and 3 uncategorized fatalities. 
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="center main-text">
                     <p>I researched the dataset further and found a number of significant caveats. MPD officers report to the scene 
                         of a crash and complete the crash report form. This report is completed and published to the dataset each week. 
                         However, the crash report is not updated. If a victim dies hours, days, or even months later that isn't updated 
@@ -118,7 +132,7 @@
                     <p>To the city's credit, they were upfront with these caveats. However, on the same page where they list these caveats, 
                         they also state that the purpose of the dataset is to “provide crash location data  to users interested in exploring 
                         spatial patterns and creating maps in support of safety analysis.” Since I was focused on traffic violence involving 
-                        pedestrians and cyclists, I couldn't afford to use a dataset  that was missing so many confirmed incidents. </p>
+                        pedestrians and cyclists, I couldn't afford to use a dataset that was missing so many confirmed incidents. </p>
                 </div>
             </div> 
 
@@ -142,7 +156,7 @@
                     <div class="row">
                         <div class="bar-chart background-transparent right main-text" id="barChart1">
                                 <p class="no-margin bar-chart-text">Washington, DC has eight wards. From January 2021 through October 2022, 
-                                    the rate of traffic fatalities per 100,000 residents is highest in Wards 7 and 8, east of the Anacostia River. 
+                                    the rate of traffic fatalities per 100,000 residents is highest in <b>Wards 7</b> and <b>8</b>, east of the Anacostia River. 
                                 </p>
                         </div>
                     </div> 
@@ -195,7 +209,7 @@
                     </div>
                     <div class="row">
                         <div class="fatal-points left background-transparent" id="example3">
-                            <p class="no-margin"> In NE DC, two fatalities happened within three blocks of each other. 5 year old Alison Hart was killed in a crosswalk
+                            <p class="no-margin"> In NE DC, two fatalities happened within three blocks of each other. 5-year-old Allison Hart was killed in a crosswalk
                                 while riding her bicycle. The other victim is unnamed.
                             </p>
                         </div>
@@ -205,36 +219,39 @@
 
             <div class="row">
                 <div class="center main-text">
-                    <p>tktktk
+                    <p>22 of 72 total traffic deaths between January 1, 2021 and November 1, 2022 weren't included in the official public crash dataset. That's a <b>30%</b>
+                        undercount. Most of the traffic deaths occurred in Wards 7 and 8. With this in mind, we should ask if Vision Zero efforts are reaching those they
+                        need to reach.
                     </p>
                 </div>
             </div>  
 
             <div class="row">
                 <div class="center main-text">
-                    <p>tktkktk  
+                    <p>Vision Zero efforts include building bike lanes, lowering speed limits, automating traffic enforcement using red-light and speeding cameras,
+                        building self-enforcing streets, and increasing speeding citations. The map below shows several patterns.
                     </p>
                 </div>
             </div> 
             
+            <div class="row">
+                <div class="center main-text">
+                    <p>There are very few bike lanes in Wards 7 and 8, forcing bicyclists into unsafe streets</p>
+                </div>
+            </div> 
 
+            <div class="row">
+                <div class="center main-text">
+                    <p>The goal of Vision Zero is noble, but it may be time for cities to reevaluate their progress. This should involve looking beyond numbers and should
+                        focus on the equity of their effors. 
+                    </p>
+                </div>
+            </div> 
 
             <!--interactive map-->
             <div class="row">
                 <div class="vert-center">
                     <div id="interactiveMap"></div>
-                </div>
-            </div> 
-
-            <div class="row">
-                <div class="center main-text">
-                    <p>tktktk</p>
-                </div>
-            </div> 
-
-            <div class="row">
-                <div class="center main-text">
-                    <p>Denouement. Vision zero is great, but we should be looking beyond it.</p>
                 </div>
             </div> 
 

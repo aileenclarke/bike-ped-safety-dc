@@ -11,6 +11,19 @@ body{
     
 }
 
+.title{
+    font-size: 2em;
+    color:#D3D3D3;
+    height:100vh;
+    display:inline-block;
+}
+
+
+.author{
+    color:#D3D3D3;
+    font-size: 1em;
+}
+
 .main-text{
     color:#D3D3D3
 }
@@ -50,6 +63,10 @@ p{
     width: 100%;
     display: inline-block;
     padding: 20px;
+}
+
+.beginning {
+    background-color: rgba(255, 255, 255, 0) !important;
 }
 
 /* bar chart style */

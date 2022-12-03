@@ -2,7 +2,7 @@
 window.onload = function(){
 
     
-        var lineW = 800, lineH= 375;
+        var lineW = 750, lineH= 375;
         var data = [
             {year:2015,location:"DC",fatal_rate:3.4},
             {year:2016,location:"DC",fatal_rate:3.6},
@@ -535,9 +535,14 @@ function getInteractiveData(layerControl){
     fetch("data/dcWards.geojson")
         .then(function(response){
             return response.json();
+            
         })
         .then(function(json){
             dcWards = L.geoJson(json, {
+                onEachFeature:function(feature, layer){
+                    var wardPopup = createWardPopup(feature);
+                    layer.bindPopup(wardPopup)
+                },
                 style:function(feature){
                     return {
                         color: "#94d2bd",
@@ -553,10 +558,14 @@ function getInteractiveData(layerControl){
         })      
         .then(function(json){
             dcHIN = L.geoJson(json, {
+                onEachFeature:function(feature, layer){
+                    var hinPopup = createHINPopup(feature);
+                    layer.bindPopup(hinPopup)
+                },
                 style:function(feature){
                     return {
                         color: hinStroke(feature.properties),
-                        weight: 1
+                        weight: 3
                     }
                 }
             }).addTo(interactiveMap);
@@ -571,12 +580,12 @@ function getInteractiveData(layerControl){
             bikeLanes= L.geoJson(json, {
                 onEachFeature:function(feature, layer){
                     var bikeLanePopup = createBikeLanePopup(feature);
-                    layer.bindPopup(bikeLanes)
+                    layer.bindPopup(bikeLanePopup)
                 },
                 style:function(feature){
                     return {
                         color:"white",
-                        weight: 1
+                        weight: 3
                         //stroke:laneStroke(feature.properties)
                     }
                 }
@@ -633,14 +642,31 @@ function hinStroke(props){
     };
 };
 
+function createWardPopup(feature){
+    var wardPopup = feature.properties.NAME
+    return wardPopup 
+};
+
 function createBikeLanePopup(feature){
-    var bikeLanePopup = "<p><b>Conventional Bike Lane:</b> " + feature.properties.BIKELANE_2 + 
-    "</p><p><b>Dual Protected Bike Lane:</b> " + feature.properties.BIKELANE_D + 
+    var bikeLanePopup = 
+    "</p><p><b>Bike Lane</b><br>" +
+    "<p><b>Conventional Bike Lane:</b> " + feature.properties.BIKELANE_2 +
+    "</p><p><b>Dual Protected Bike Lane:</b> " + feature.properties.BIKELANE_D +
     "</p><p><b>Dual Buffered Bike Lane:</b> " + feature.properties.BIKELANE_3 +
-    "</p><p><b>Protected Bike Lane:</b> " + feature.properties.BIKELANE_4 +
+    "</p><p><b>Protected Bike Lane:</b> " + feature.properties.BIKELANE_4 + 
     "</p><p><b>Buffered Bike Lane:</b> " + feature.properties.BIKELANE_B +
     "</p><p><b>Road:</b> " + feature.properties.ROUTENAME
     return bikeLanePopup 
+};
+
+function createHINPopup(feature){
+    var hinPopup = 
+    "</p><p><b>High Injury Network Corridor</b><br>" +
+    "</p><p><b>Road:</b> " + feature.properties.RouteName +
+    "</p><p><b>Tier 1:</b> " + feature.properties.Tier_1 +
+    "</p><p><b>Tier 2:</b> " + feature.properties.Tier_2 +
+    "</p><p><b>Tier 3:</b> " + feature.properties.Tier_3 
+    return hinPopup 
 };
 
 function createMissingPopupContent(feature){
